@@ -102,7 +102,7 @@ input[type="text"],
 input[type="tel"] {
     border: none;
     display: inline-block;
-    background-color: lightgray;
+    background-color:#F4F4F5;
     margin: 5px 0;
     line-height: 2.5rem;
     width: 100%
@@ -165,11 +165,13 @@ h4 {
 }
 
 #i-hour {
+    background-color: #F7F7FF;
     width: 30%
 }
 
 /*set the city box as proper right space and position*/
 #i-city {
+    background-color: #F7F7FF;
     float: right;
     width: calc(70% - 0.8rem)
 }
@@ -306,6 +308,10 @@ h4 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
+    #form02 .cal {
+        overflow-y: hidden;
+        width: 13%;
+    }
 
     .main h3 {
         top:1rem;
@@ -329,10 +335,7 @@ h4 {
         justify-content: left;
     }
 
-    #form02 .cal {
-        overflow-y: hidden;
-        width: 13%;
-    }
+    
 
     footer {
         padding-top: 1rem;
