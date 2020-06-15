@@ -330,6 +330,7 @@ h4 {
     }
 
     #form02 .cal {
+        overflow-y: hidden;
         width: 13%;
     }
 
