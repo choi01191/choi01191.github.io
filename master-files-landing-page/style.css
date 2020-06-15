@@ -1,3 +1,355 @@
-@font-face{
-    
+/*font-face: import server font*/
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+    font-weight: 500;
+}
+
+/*reset of basic default */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    overflow-x: hidden;
+
+}
+
+/*i have just one a tag */
+a {
+    color: #FF8480;
+    text-decoration: none;
+}
+
+button,
+a,
+input {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*the layout is margin around 36px, i dont need for mian layout using flex or grid from moblie*/
+.main {
+    margin: 0 36px;
+}
+
+/*the mockup moblie needed size and positioning*/
+.logo {
+    margin: 5px 0 25px 36px;
+    width: 115px;
+    height: 81px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+p {
+    font-size: 1rem;
+    padding-top: 0.8rem;
+}
+
+.scooter {
+    min-width: 290px;
+}
+
+footer {
+    background-color: #FFFD8C
+}
+
+/*fieldset, it have its border*/
+fieldset {
+    border: none
+}
+
+/*box-shadow, it required and the layout i set as flex as column direction*/
+#frm01 {
+    max-width: 85%;
+    border-radius: 26px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 1.5rem auto;
+    box-shadow: 5px 10px 15px #333131;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+input {
+    border-radius: 11px;
+}
+
+/*inline-block so that i can set height using line heigh*/
+input[type="text"],
+input[type="tel"] {
+    border: none;
+    display: inline-block;
+    background-color: lightgray;
+    margin: 5px 0;
+    line-height: 2.5rem;
+    width: 100%
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+input[type=submit] {
+    background-color: #57EEAB;
+    border: none;
+    font-weight: bold;
+    height: 55px;
+    font-size: 24px;
+
+}
+
+.ready {
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 1em
+}
+
+/*for four contents, using flex, easy to set evenly space*/
+.sns-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 10px auto;
+}
+
+/*i is like text tag so that treat like font..soo that color */
+.fab {
+    font-size: 2rem;
+    color: black
+}
+
+.sns-box .im {
+    color: black;
+    font-size: 2rem;
+}
+
+footer .sns-box a {
+    padding-top: 1px;
+}
+
+footer p {
+    padding-top: 0.5rem;
+}
+
+.frm-box {
+    margin: 22px 37px
+}
+
+h4 {
+    font-size: 18px;
+}
+
+#i-hour {
+    width: 30%
+}
+
+/*set the city box as proper right space and position*/
+#i-city {
+    float: right;
+    width: calc(70% - 0.8rem)
+}
+
+#form02 .cal {
+    display: inline-block;
+    width: 100%;
+    line-height: 2.5rem;
+    background-color: #FF8480;
+    color: white
+}
+
+#form02 fieldset {
+    margin-bottom: 0.3rem;
+
+}
+
+/*from 768 tablet view css */
+@media screen and (min-width:768px) {
+
+    /*font default set as 18px*/
+    * {
+        font-size: 18px;
+    }
+
+    .logo {
+        margin: 1rem 0 0 4.5rem
+    }
+
+    .main {
+        position: relative;
+        margin: 0 4.5rem
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /*when the tablet mockup the paragraph is overlapping with scooter image*/
+    h3 {
+        position: absolute;
+    }
+
+    p {
+        font-size: 30px;
+
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    .ready {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #frm01 {
+        padding: 3rem;
+        max-width: 87%;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        margin: 0.5rem 0;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    .big-form,
+    fieldset {
+        margin-bottom: 0.5rem
+    }
+
+    #i-hour {
+        width: 35%;
+        height: 40px;
+        margin-right: 1rem;
+
+    }
+
+    #i-city {
+        width: 60%;
+        height: 40px
+    }
+
+    #form02 .cal {
+        margin: 0.5rem 1rem;
+        width: 30%;
+        height: 40px
+    }
+
+    /* three  input set in one row*/
+
+    #form02 {
+        display: flex;
+
+    }
+
+    .frm-box {
+        margin: 22px 4rem
+    }
+
+    .sns-box {
+        justify-content: space-evenly;
+    }
+}
+
+/*media size */
+@media screen and (min-width:1440px) {
+
+    h1 {
+        font-size: 80px;
+    }
+
+    /*using grid layout main page*/
+    .main {
+        margin: 2rem 5rem;
+
+        display: grid;
+        grid-template-columns: 30% 40%;
+        grid-template-rows: 60% 30% 10%;
+
+    }
+
+    .main h1 {
+
+        margin-bottom: 0;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .main h3 {
+        grid-row: 2/3;
+        position: relative;
+    }
+
+    .scooter {
+        margin: auto;
+        grid-row: 1/4;
+    }
+
+    #frm01 {
+        width: 80%;
+        grid-column: 3/4;
+        padding: 2rem;
+        grid-row: 1/4;
+    }
+
+    #form02 {
+        justify-content: left;
+    }
+
+    #form02 .cal {
+        width: 13%;
+    }
+
+    footer {
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    /*the way of vertical center*/
+    .sns-box {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-30%, -50%);
+
+    }
+
+    .sns-box .im,
+    .fab {
+        margin-right: 1.5rem;
+
+    }
+
+
 }
