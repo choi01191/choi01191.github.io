@@ -1,0 +1,100 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+/*a, table, input, label{border: 0;outline: 0;}*/
+html, body{width: 100vw; max-height: 100vh;font-family:sans-serif;margin: 0px;overflow-x: hidden}
+
+a{text-decoration: none;}
+img{margin: 0;padding: 0;bottom: 0;outline:0;max-width:100%;}
+
+
+/*main*/
+.wrap {width: 100vw;}
+.page1{width: 100vw;}
+.hd{width: 100vw;
+    height: 100px;
+    position: relative;
+    }
+.logo {display: block;width: 200px; height: 40px;margin-top: 20px;margin-left: 50px;position: absolute;z-index: 4}
+
+/*menu*/
+
+.hamberg{clear: both; cursor:pointer;float:right;position: relative;0px;height: 30px;width: 40px;z-index: 4;top: 30px;box-sizing: border-box;right: 4%;} 
+.line{display: block;background-color: black;width: 100%;height: 5px;border-radius: 30px; position: absolute;box-sizing: border-box;}
+.hamberg span:first-child{ top:0}
+.hamberg span:nth-child(2) {top: 50%; transform:translateY(-50%)}
+.hamberg span:last-child {bottom: 0}
+@keyframes m_a{
+    from{opacity: 0;transform: skewX(180deg)};
+    to{opacity: 1; transform: skewY(180deg);}
+    
+}
+#cb:checked ~ label span:first-child{ top:50%;-webkit-transform:translateY(-50%) rotate(45deg);background-color: white;animation: m_a ease 1s}
+#cb:checked ~ label span:nth-child(2){ opacity:0;background-color: white;animation: m_a ease 1s}
+#cb:checked ~ label span:last-child {bottom:50%;-webkit-transform:translateY(50%)rotate(-45deg);background-color: white;animation: m_a ease 1s}
+
+.lin1{display: block; margin-top: 40px;}
+
+#gnb{position: absolute;width: 100vw;height:100vh;background-color: rgba(0,0,0,0.7);z-index:2;display: none;font-family: 'Jua'}
+#cb:checked ~ .menu_box{display: block}
+#cb{display: none;}
+.menu{width: 200px;height: 50px;margin: 0 auto;font-size: 30px;margin-top: 220px;text-align: center;}
+.menu li{height: 30px;margin: 30px;}
+.menu li a{color:white}
+.menu li a:hover{color: black; font-weight: bold;}
+.bottom{width: 200px;height: 100px;margin-top: 400px;margin-left: 47%;position: relative;}
+.menu li:hover {background-color: rgba(225,225,225,0.5);transition: 0.5s}
+
+
+.bottom:after{position: absolute;content: "|";display: block;width: 20px;color: white;height: 30px; left: 60px; padding-top: 2px} 
+.bottom a:hover{color: darkgray}
+.bt{font-size: 20px;display: block; color: white; width: 80px; float: left;padding-right: 5px}
+.bt left{height: 29px;}
+
+/*footer*/
+.ft{max-width: 100%;height: 120px;background-color:black;color: white;clear:both;position: relative;margin-bottom: 0;}
+.ft_wrap{max-width: 80% ;height: 50px;margin: 0 auto;padding-top: 40px}
+.hour_box{float: right}
+.sns a{margin: 10px; display: block;float:left;}
+.copyright{text-align: center;}
+#totop {background-image: url(icon/upwards-arrow.png);background-repeat: no-repeat;position:fixed; right:60px; bottom:150px; z-index:999; 
+        display:block; width: 50px; height: 50px;text-align:center;
+             background-position:     center center;    
+        border-radius:32px; box-shadow:0px 0px 12px #333; }
+#totop:hover {background-color: rgba(225,225,225,0.7);box-shadow: 5px 5px 15px #333;transform: scale(1.2)}
+
+/*pop*/
+#pop .m {clear: both;left: 0;}
+/*
+fieldset {width: 500px;height: 600px;}
+    */
+#pop2{width: 100%; height: 100%;position: fixed; z-index: 99 ;background-color: rgba(1,1,1,0.5);right: 0;top: 0; display: none;}
+#pop2:target{display: block;}
+#pop{width: 100%; height: 100%;position: fixed; z-index: 99 ;background-color: rgba(1,1,1,0.5);right: 0;top: 0; display: none;}
+fieldset{box-sizing: border-box:4px solid #333;background-color: rgba(225,225,225,0.6);padding: 10px}
+label{font-size: 14px}
+#frm02{padding-top: 20px;height: 320px}
+.field_log{display: block;padding-left: 40px}
+.p_frm{width: 400px; height: 400px; background-color:rgba(168, 168, 168,0.8);margin: 10% auto;}
+.p_frm2{width: 400px; height: 400px; background-color:rgba(168, 168, 168,0.8);margin: 30% auto;}
+.field_c{padding: 15px}
+.set{padding-top: 20px; width: 130px;margin: 0 auto;height: 100px;}
+.sm{;width: 60px;height: 20px;}
+#pop:target {display: block}
+.field2{width: 400px;height: 100px;}
+.close{box-sizing: border-box; display: block;font-size: 14px;color:black;-webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;width: 60px;height: 20px;
+background-color: transparent;
+text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;font: 400 13.3333px Arial;}
