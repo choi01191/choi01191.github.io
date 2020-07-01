@@ -1,9 +1,0 @@
-.hamburg {clear: both;}
-        .icon { clear:both; width: 940px;margin: 0 auto;}
-        .hamburg li {float: left; width: 23.8%; margin: 1% 0 1% 1.6%; background: #333;padding: 100px 30px; box-sizing: border-box;position: relative;height: 220px; }
-        .hamburg label{clear: both; cursor:pointer;} 
-
-.hamburg li.item3:hover .line {position: absolute; top: 100px;left: 90px;}
-        .hamburg li.item3:hover .line:first-child{ -webkit-transform:rotate(45deg);}
-        .hamburg li.item3:hover .line:nth-child(2){ opacity:0;}
-        .hamburg li.item3:hover .line:last-child {-webkit-transform:rotate(-45deg);}
