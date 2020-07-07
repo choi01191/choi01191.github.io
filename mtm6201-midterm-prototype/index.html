@@ -4,26 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
     <title>Road Trip</title>
 </head>
 
 <body>
     <header>
-        <a href="./index.html" class="logo"><img src="./image/logo.png" alt="logo"></a>
-        <nav>
+        <a href="./index.html" class="img-a" ><img src="./image/logo.png" class="logo" alt="logo"></a>
+        
+        <input type="checkbox" name ="check" id="check">
+       
+        <label for="check" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+     
+        <nav id= "gnb">
             <ul class="gnb">
-                <li>New Arriveal</li>
-                <li>Women</li>
-                <li>Men</li>
-                <li>Accessories</li>
-                <li>Brands</li>
+                <li id="big-menu">
+                    <a href="#">New Arrival</a></li>
+                    <input type="checkbox" id="menu1">  
+                <label class="accordion" for="menu1">
+                <li id="big-menu">Women<i class="fas fa-caret-down"></i>
+                     </li>
+            </label>
+            
+                <ul class="sub">
+                    <li class="sub-menu"><a href="product.html">Dresses</a></li>
+                    <li class="sub-menu"><a href="product.html">Tops</a></li>
+                    <li class="sub-menu"><a href="product.html">Sweater & Wras</a></li>
+                    <li class="sub-menu"><a href="product.html">Jumpsutis & Rompers</a></li>
+                    <li class="sub-menu"><a href="product.html">Bottoms</a></li>
+                    <li class="sub-menu"><a href="product.html">Outerwear</a></li>
+                    <li class="sub-menu"><a href="product.html">Accessories</a></li>
+                    <li class="sub-menu"><a href="product.html">FootWear</a></li>
+                    <li class="sub-menu"><a href="product.html">UnderWear</a></li>
+                    <li class="sub-menu"><a href="product.html">SleepWear</a></li>
+                </ul>
+                <input type="checkbox" id="menu2">  
+                <label class="accordion" for="menu2">
+                <li id="big-menu" id="menu2">Men</li>
+                </label>
+                    <ul class="sub">
+                        <li class="sub-menu"><a href="product.html">Shirts</a></li>
+                        <li class="sub-menu"><a href="product.html">Tees</a></li>
+                        <li class="sub-menu"><a href="product.html">Sweater & Hoodies</a></li>
+                        <li class="sub-menu"><a href="product.html">Bottoms</a></li>
+                        <li class="sub-menu"><a href="product.html">Outerwear</a></li>
+                        <li class="sub-menu"><a href="product.html">Accessories</a></li>
+                        <li class="sub-menu"><a href="product.html">Bags</a></li>
+                        <li class="sub-menu"><a href="product.html">UnderWear</a></li>
+                        
+                    </ul>
+                    <input type="checkbox" id="menu3">  
+                    <label class="accordion" for="menu3">
+                <li id="big-menu" id="menu3">Accessories</li>
+                </label>
+                    <ul class="sub">
+                        <li class="sub-menu"><a href="product.html">Drinkware</a></li>
+                        <li class="sub-menu"><a href="product.html">Purses</a></li>
+                        <li class="sub-menu"><a href="product.html">Wallets</a></li>
+                        <li class="sub-menu"><a href="product.html">Necklaces</a></li>
+                        <li class="sub-menu"><a href="product.html">Socks</a></li>
+                        <li class="sub-menu"><a href="product.html">Hat & Hair</a></li>
+                        <li class="sub-menu"><a href="product.html">Scarves</a></li>
+                        <li class="sub-menu"><a href="product.html">Footwear</a></li>
+                        <li class="sub-menu"><a href="product.html">Boot Socks</a></li>
+              
             </ul>
-            <div class="right-menu">
-                <a href="#" class="id"><img src="icon/avatar.png" alt="avatar"></a>
-                <a href="#" class="shop"><img src="icon/bag.png" alt="bag"></a>
-
-                <div>
+            
+            <li id="big-menu"><a href="product.html">Brands</li>
         </nav>
+        <div class="right-menu">
+            <a href="#" class="id"><img src="icon/avatar.png" alt="avatar"></a>
+            <a href="#" class="shop"><img src="icon/bag.png" class ="bag" alt="bag"></a>
+
+            <div>
 
     </header>
     <main id="page1">
@@ -42,7 +100,7 @@
         <input type="submit" id="search">
     </form>
     <div class="page2">
-        <ul id="page2-container">
+        <ul class="page2-container">
             <li><img src="./image/street-351481_1920.jpg" alt="street"></li>
             <li><img src="./image/car-2606586_1920.jpg" alt="drive"></li>
             <li>
@@ -66,49 +124,51 @@
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
-                
+
             </div>
             <div class="pic-col item2">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
-                
+
             </div>
             <div class="pic-col item3">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
-                
+
             </div>
             <div class="pic-col item4">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
-                
+
             </div>
         </div>
     </div>
     <footer>
-<ul class="guide">
-    <li><a href="#">Shipping& Returns</a></li>
-    <li><a href="#">Sizing</a></li>
-    <li><a href="#">Terms of Service</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-</ul>
-<ul class="company">
-    <li><a href="#">Our company</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
-<ul class="help"><li><a href="#">Gift Card</a></li></ul>
-<p>goeounchoi9090@gmail.com</p><br>
-<p>613-804-1004</p>
-<ul class="sns-container">
-    <li><a href="#"><img src="./icon/instagram.png" alt="instagram"></a></li>
-    <li><a href="#"><img src="./icon/pinterest.png" alt="pin"></a></li>
-    <li><a href="#"><img src="./icon/twitter.png" alt="twitter"></a></li>
-    <li><a href="#"><img src="./icon/facebook.png" alt="facebook"></a></li>
-</ul>
-</footer>
+        <ul class="guide">
+            <li><a href="#">Shipping& Returns</a></li>
+            <li><a href="#">Sizing</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="company">
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="help">
+            <li><a href="#">Gift Card</a></li>
+        </ul>
+        <p>goeounchoi9090@gmail.com</p><br>
+        <p>613-804-1004</p>
+        <ul class="sns-container">
+            <li><a href="#"><img src="./icon/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="./icon/pinterest.png" alt="pin"></a></li>
+            <li><a href="#"><img src="./icon/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="./icon/facebook.png" alt="facebook"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
