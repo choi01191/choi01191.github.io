@@ -666,7 +666,7 @@ footer div {
 
 /*desktop mode*/
 @media screen and (min-width:1024px) {
-
+   
     * {
         font-size: 20px;
     }
@@ -695,14 +695,15 @@ footer div {
         font-size: 1.3rem;
     }
 
-    header {
+    header  {
+        font-size: 1.2rem;
         position: relative;
-        height: 150px;
+        height: 180px;
 
     }
 
     .logo {
-        margin-top: 1rem;
+        margin: 1rem 0;
     }
 
     #page1 {
@@ -724,7 +725,7 @@ footer div {
         width: 100vw;
         display: block;
         color: var(--sub-color);
-        top: 100px;
+        top: 120px;
         height: auto;
         left: 50%;
         transform: translateX(-50%);
