@@ -4,141 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Products list</title>
 </head>
 
 <body>
     <header>
-        <a href="./index.html" class="logo"><img src="./image/logo.png" alt="logo"></a>
-        <nav>
-            <ul class="gnb">
-                <li>
-                    <a href="">New Arrival</a>
-                    
-                </li>
-                <li><a href="product.html">Women</a>
-                    <ul class="sub">
-                        <li class="sub-menu"><a href="product.html">Dresses</a></li>
-                        <li class="sub-menu"><a href="product.html">Tops</a></li>
-                        <li class="sub-menu"><a href="product.html">Sweater & Wraps</a></li>
-                        <li class="sub-menu"><a href="product.html">Jumpsutis & Rompers</a></li>
-                        <li class="sub-menu"><a href="product.html">Bottoms</a></li>
-                        <li class="sub-menu"><a href="product.html">Outerwear</a></li>
-                        <li class="sub-menu"><a href="product.html">Accessories</a></li>
-                        <li class="sub-menu"><a href="product.html">FootWear</a></li>
-                        <li class="sub-menu"><a href="product.html">UnderWear</a></li>
-                        <li class="sub-menu"><a href="product.html">SleepWear</a></li>
-                    </ul>
-                </li>
-                <li><a href="product.html">Men</a>
-                    <ul class="sub">
-                        <li class="sub-menu"><a href="product.html">Shirts</a></li>
-                        <li class="sub-menu"><a href="product.html">Tees</a></li>
-                        <li class="sub-menu"><a href="product.html">Sweater & Hoodies</a></li>
-                        <li class="sub-menu"><a href="product.html">Bottoms</a></li>
-                        <li class="sub-menu"><a href="product.html">Outerwear</a></li>
-                        <li class="sub-menu"><a href="product.html">Accessories</a></li>
-                        <li class="sub-menu"><a href="product.html">Bags</a></li>
-                        <li class="sub-menu"><a href="product.html">UnderWear</a></li>
-                        
-                    </ul>
-                </li>
-                <li><a href="product.html">Accessories</a> 
-                    <ul class="sub">
-                        <li class="sub-menu"><a href="product.html">Drinkware</a></li>
-                        <li class="sub-menu"><a href="product.html">Purses</a></li>
-                        <li class="sub-menu"><a href="product.html">Wallets</a></li>
-                        <li class="sub-menu"><a href="product.html">Necklaces</a></li>
-                        <li class="sub-menu"><a href="product.html">Socks</a></li>
-                        <li class="sub-menu"><a href="product.html">Hat & Hair</a></li>
-                        <li class="sub-menu"><a href="product.html">Scarves</a></li>
-                        <li class="sub-menu"><a href="product.html">Footwear</a></li>
-                        <li class="sub-menu"><a href="product.html">Boot Socks</a></li>
-                </li>
-                <li><a href="product.html">Brands</a></li>
-            </ul>
-            <div class="right-menu">
-                <a href="#" class="id"><img src="icon/avatar.png" alt="avatar"></a>
-                <a href="#" class="shop"><img src="icon/bag.png" alt="bag"></a>
+        <a href="./index.html" class="img-a"><img src="./image/logo.png" class="logo" alt="logo"></a>
+        <div class="right-menu">
+            <a href="#" class="id"><i class="fas fa-user-alt"></i></a>
+            <a href="#" class="shop"><img src="icon/bag.png" class="bag" alt="bag"></a>
+        </div>
+        <input type="checkbox" name="check" id="check">
 
-                <div>
+        <label for="check" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+
+        <nav id="gnb">
+            <div class="gnb">
+                <div class="big-menu">
+                    <a href="#">New Arrival</a></div>
+                <input type="checkbox" id="menu1" class="delete">
+                <label class="accordion big-menu" for="menu1">Women <i class="fas fa-caret-down"></i>
+                </label>
+
+                <ul class="sub" id="sub">
+                    <li style="--dealy:1" class="sub-menu"><a href="product.html">Dresses</a></li>
+                    <li style="--delay:2" class="sub-menu"><a href="product.html">Tops</a></li>
+                    <li style="--delay:3" class="sub-menu"><a href="product.html">Sweater & Wras</a></li>
+                    <li style="--delay:4" class="sub-menu"><a href="product.html">Jumpsutis & Rompers</a></li>
+                    <li style="--delay:5" class="sub-menu"><a href="product.html">Bottoms</a></li>
+                    <li style="--delay:6" class="sub-menu"><a href="product.html">Outerwear</a></li>
+                    <li style="--delay:7" class="sub-menu"><a href="product.html">Accessories</a></li>
+                    <li style="--delay:8" class="sub-menu"><a href="product.html">FootWear</a></li>
+                    <li style="--delay:9" class="sub-menu"><a href="product.html">UnderWear</a></li>
+                    <li style="--delay:10" class="sub-menu"><a href="product.html">SleepWear</a></li>
+                </ul>
+                <input type="checkbox" id="menu2" class="delete">
+                <label class="accordion big-menu" for="menu2">Men<i class="fas fa-caret-down"></i>
+
+                </label>
+                <ul class="sub">
+                    <li style="--delay:1" class="sub-menu"><a href="product.html">Shirts</a></li>
+                    <li style="--delay:2" class="sub-menu"><a href="product.html">Tees</a></li>
+                    <li style="--delay:3" class="sub-menu"><a href="product.html">Sweater & Hoodies</a></li>
+                    <li style="--delay:4" class="sub-menu"><a href="product.html">Bottoms</a></li>
+                    <li style="--delay:5" class="sub-menu"><a href="product.html">Outerwear</a></li>
+                    <li style="--delay:6" class="sub-menu"><a href="product.html">Accessories</a></li>
+                    <li style="--delay:7" class="sub-menu"><a href="product.html">Bags</a></li>
+                    <li style="--delay:8" class="sub-menu"><a href="product.html">UnderWear</a></li>
+
+                </ul>
+                <input type="checkbox" class="delete" id="menu3">
+                <label class="accordion big-menu" for="menu3">Accessorie<i class="fas fa-caret-down"></i> </label>
+
+
+                <ul class="sub">
+                    <li style="--delay:1" class="sub-menu"><a href="product.html">Drinkware</a></li>
+                    <li style="--delay:2" class="sub-menu"><a href="product.html">Purses</a></li>
+                    <li style="--delay:3" class="sub-menu"><a href="product.html">Wallets</a></li>
+                    <li style="--delay:4" class="sub-menu"><a href="product.html">Necklaces</a></li>
+                    <li style="--dplay:5" class="sub-menu"><a href="product.html">Socks</a></li>
+                    <li style="--delay:6" class="sub-menu"><a href="product.html">Hat & Hair</a></li>
+                    <li style="--delay:7" class="sub-menu"><a href="product.html">Scarves</a></li>
+                    <li style="--delay:8" class="sub-menu"><a href="product.html">Footwear</a></li>
+                    <li style="--delay:9" class="sub-menu"><a href="product.html">Boot Socks</a></li>
+                </ul>
+
+
+
+
+
+                <div class="big-menu brand"><a href="product.html">Brands</a></div>
+            </div>
         </nav>
+
+        <!--desktop nav-->
+        <nav id="desk-gnb">
+            <div class="desk-gnb">
+                <div class="desk-li">
+                    <a href="#">New Arrival</a></div>
+
+                <div class="desk-li" id="dm1">
+                    <a href="#"> Women</a>
+                    <ul class="desk-sub p">
+                        <li style="--dealy:1" class="desk-sub-li"><a href="product.html">Dresses</a></li>
+                        <li style="--delay:2" class="desk-sub-li"><a href="product.html">Tops</a></li>
+                        <li style="--delay:3" class="desk-sub-li"><a href="product.html">Sweater & Wras</a></li>
+                        <li style="--delay:4" class="desk-sub-li"><a href="product.html">Jumpsutis & Rompers</a>
+                        </li>
+                        <li style="--delay:5" class="desk-sub-li"><a href="product.html">Bottoms</a></li>
+                        <li style="--delay:6" class="desk-sub-li"><a href="product.html">Outerwear</a></li>
+                        <li style="--delay:7" class="desk-sub-li"><a href="product.html">Accessories</a></li>
+                        <li style="--delay:8" class="desk-sub-li"><a href="product.html">FootWear</a></li>
+                        <li style="--delay:9" class="desk-sub-li"><a href="product.html">UnderWear</a></li>
+                        <li style="--delay:10" class="desk-sub-li"><a href="product.html">SleepWear</a></li>
+                    </ul>
+
+
+
+                </div>
+
+
+
+                <div class="desk-li" id="dm2"><a href="product.html">Men</a>
+                    <ul class="desk-sub p">
+                        <li style="--delay:1" class="desk-sub-li"><a href="product.html">Shirts</a></li>
+                        <li style="--delay:2" class="desk-sub-li"><a href="product.html">Tees</a></li>
+                        <li style="--delay:3" class="desk-sub-li"><a href="product.html">Sweater & Hoodies</a></li>
+                        <li style="--delay:4" class="desk-sub-li"><a href="product.html">Bottoms</a></li>
+                        <li style="--delay:5" class="desk-sub-li"><a href="product.html">Outerwear</a></li>
+                        <li style="--delay:6" class="desk-sub-li"><a href="product.html">Accessories</a></li>
+                        <li style="--delay:7" class="desk-sub-li"><a href="product.html">Bags</a></li>
+                        <li style="--delay:8" class="desk-sub-li"><a href="product.html">UnderWear</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="desk-li" id="dm"><a href="product.html"> Accessorie </a>
+
+                    <ul class="desk-sub p">
+                        <li style="--delay:1" class="desk-sub-li"><a href="product.html">Drinkware</a></li>
+                        <li style="--delay:2" class="desk-sub-li"><a href="product.html">Purses</a></li>
+                        <li style="--delay:3" class="desk-sub-li"><a href="product.html">Wallets</a></li>
+                        <li style="--delay:4" class="desk-sub-li"><a href="product.html">Necklaces</a></li>
+                        <li style="--dplay:5" class="desk-sub-li"><a href="product.html">Socks</a></li>
+                        <li style="--delay:6" class="desk-sub-li"><a href="product.html">Hat & Hair</a></li>
+                        <li style="--delay:7" class="desk-sub-li"><a href="product.html">Scarves</a></li>
+                        <li style="--delay:8" class="desk-sub-li"><a href="product.html">Footwear</a></li>
+                        <li style="--delay:9" class="desk-sub-li"><a href="product.html">Boot Socks</a></li>
+
+                    </ul>
+                </div>
+                <div class="desk-li brand"><a href="product.html">Brands</a></div>
+            </div>
+        </nav>
+
+
 
     </header>
     <div class="banner">
         <h2>Big title</h2>
         <h3>Excepteur sint acceat cupidatat</h3>
     </div>
+    <h2 class="p-title">Big title</h2>
     <div id="item-container">
-        <h2>Big title</h2>
+      
         <div class="pic-col itme1">
             <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
             <h3>Long& Big title</h3>
             <h4>Cloth</h4>
-            <div id="content-list" class="pic-col item1">
+        </div>
+            <div id="content-list1" class="pic-col item1">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item2">
+            <div id="content-list2" class="pic-col item2">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item3">
+            <div id="content-list3" class="pic-col item3">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item4">
+            <div id="content-list4" class="pic-col item4">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item5">
+            <div id="content-list5" class="pic-col item5">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item6">
+            <div id="content-list6" class="pic-col item6">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item7">
+            <div id="content-list7" class="pic-col item7">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
-            <div id="content-list" class="pic-col item8">
+            <div id="content-list8" class="pic-col item8">
                 <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
                 <h3>Long& Big title</h3>
                 <h4>Cloth</h4>
             </div>
         </div>
+       </div>
         <footer>
-            <ul class="guide">
-                <li><a href="#">Shipping& Returns</a></li>
-                <li><a href="#">Sizing</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <ul class="company">
-                <li><a href="#">Our company</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="help">
-                <li><a href="#">Gift Card</a></li>
-            </ul>
-            <p>goeounchoi9090@gmail.com</p><br>
-            <p>613-804-1004</p>
-            <ul class="sns-container">
-                <li><a href="#"><img src="./icon/instagram.png" alt="instagram"></a></li>
-                <li><a href="#"><img src="./icon/pinterest.png" alt="pin"></a></li>
-                <li><a href="#"><img src="./icon/twitter.png" alt="twitter"></a></li>
-                <li><a href="#"><img src="./icon/facebook.png" alt="facebook"></a></li>
-            </ul>
-        </footer>
+            <div class="guide">Buying Guide
+                <div><a href="#">Shipping& Returns</a></div>
+                <div><a href="#">Sizing</a></div>
+                <div><a href="#">Terms of Service</a></div>
+                <div><a href="#">Privacy Policy</a></div>
+            </div>
+            <div class="company">Company
+            <div> <a href="about.html">Our company</a></div>
+    </div>
+    <div><a href="about.html">Contact</a></div>
+   
+    <div class="help">Help
+        <div><a href="#">Gift Card</a></div>
+    </div>
+    <ul class="sns-container">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <div class="text-box">
+        <p>goeounchoi9090@gmail.com</p>
+        <p>613-804-1004</p>
+        <p>All copyright: Goeun Choi</p>
+    </div>
+    </footer>
 </body>
 
 </html>

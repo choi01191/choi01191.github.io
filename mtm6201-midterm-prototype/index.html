@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
     <link rel="stylesheet" href="./Swiper-3.4.2/dist/css/swiper.min.css">
     <script src="./Swiper-3.4.2/dist/js/swiper.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-   
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <title>Road Trip</title>
 </head>
 
 <body>
     <header>
         <a href="./index.html" class="img-a"><img src="./image/logo.png" class="logo" alt="logo"></a>
-
+        <div class="right-menu">
+            <a href="#" class="id"><i class="fas fa-user-alt"></i></a>
+            <a href="#" class="shop"><img src="icon/bag.png" class="bag" alt="bag"></a>
+        </div>
         <input type="checkbox" name="check" id="check">
 
         <label for="check" class="hamburger">
@@ -27,18 +31,14 @@
         </label>
 
         <nav id="gnb">
-            <ul class="gnb">
-                <li id="big-menu">
-                    <a href="#">New Arrival</a></li>
+            <div class="gnb">
+                <div class="big-menu">
+                    <a href="#">New Arrival</a></div>
                 <input type="checkbox" id="menu1" class="delete">
-                <label class="accordion" for="menu1">
-                    <li id="big-menu">Women
-                        <i class="fas fa-caret-down"></i>
-
-                    </li>
+                <label class="accordion big-menu" for="menu1">Women <i class="fas fa-caret-down"></i>
                 </label>
 
-                <ul class="sub"id="sub">
+                <ul class="sub" id="sub">
                     <li style="--dealy:1" class="sub-menu"><a href="product.html">Dresses</a></li>
                     <li style="--delay:2" class="sub-menu"><a href="product.html">Tops</a></li>
                     <li style="--delay:3" class="sub-menu"><a href="product.html">Sweater & Wras</a></li>
@@ -51,8 +51,8 @@
                     <li style="--delay:10" class="sub-menu"><a href="product.html">SleepWear</a></li>
                 </ul>
                 <input type="checkbox" id="menu2" class="delete">
-                <label class="accordion" for="menu2">
-                    <li id="big-menu" id="menu2">Men<i class="fas fa-caret-down"></i></li>
+                <label class="accordion big-menu" for="menu2">Men<i class="fas fa-caret-down"></i>
+
                 </label>
                 <ul class="sub">
                     <li style="--delay:1" class="sub-menu"><a href="product.html">Shirts</a></li>
@@ -66,9 +66,9 @@
 
                 </ul>
                 <input type="checkbox" class="delete" id="menu3">
-                <label class="accordion" for="menu3">
-                    <li id="big-menu" id="menu3">Accessorie<i class="fas fa-caret-down"></i></li>
-                </label>
+                <label class="accordion big-menu" for="menu3">Accessorie<i class="fas fa-caret-down"></i> </label>
+
+
                 <ul class="sub">
                     <li style="--delay:1" class="sub-menu"><a href="product.html">Drinkware</a></li>
                     <li style="--delay:2" class="sub-menu"><a href="product.html">Purses</a></li>
@@ -79,77 +79,79 @@
                     <li style="--delay:7" class="sub-menu"><a href="product.html">Scarves</a></li>
                     <li style="--delay:8" class="sub-menu"><a href="product.html">Footwear</a></li>
                     <li style="--delay:9" class="sub-menu"><a href="product.html">Boot Socks</a></li>
-
                 </ul>
 
-                <li id="big-menu" class="brand"><a href="product.html">Brands</li>
-        </nav>
-        <div class="right-menu">
-            <a href="#" class="id"><i class="fas fa-user-alt"></i></a>
-            <a href="#" class="shop"><img src="icon/bag.png" class="bag" alt="bag"></a>
-</div>
-           
-                <!--desktop nav-->
-                <nav id="desk-gnb">
-                    <ul class="desk-gnb">
-                        <li class="desk-li">
-                            <a href="#">New Arrival</a></li>
-                    
-                            <li class="desk-li" id="d">
-                                <a href="#"> Women</a>
-                                <ul class="desk-sub">
-                                    <li style="--dealy:1" class="desk-sub-li"><a href="product.html">Dresses</a></li>
-                                    <li style="--delay:2" class="desk-sub-li"><a href="product.html">Tops</a></li>
-                                    <li style="--delay:3" class="desk-sub-li"><a href="product.html">Sweater & Wras</a></li>
-                                    <li style="--delay:4" class="desk-sub-li"><a href="product.html">Jumpsutis & Rompers</a></li>
-                                    <li style="--delay:5" class="desk-sub-li"><a href="product.html">Bottoms</a></li>
-                                    <li style="--delay:6" class="desk-sub-li"><a href="product.html">Outerwear</a></li>
-                                    <li style="--delay:7" class="desk-sub-li"><a href="product.html">Accessories</a></li>
-                                    <li style="--delay:8" class="desk-sub-li"><a href="product.html">FootWear</a></li>
-                                    <li style="--delay:9" class="desk-sub-li"><a href="product.html">UnderWear</a></li>
-                                    <li style="--delay:10" class="desk-sub-li"><a href="product.html">SleepWear</a></li>
-                                </ul>
 
-                              
-        
-                            </li>
-                      
-        
-                        
-                        <li class="desk-li" id="dm2"><a href="product.html">Men</a> 
-                         <ul class="desk-sub">
-                            <li style="--delay:1" class="desk-sub-li"><a href="product.html">Shirts</a></li>
-                            <li style="--delay:2" class="desk-sub-li"><a href="product.html">Tees</a></li>
-                            <li style="--delay:3" class="desk-sub-li"><a href="product.html">Sweater & Hoodies</a></li>
-                            <li style="--delay:4" class="desk-sub-li"><a href="product.html">Bottoms</a></li>
-                            <li style="--delay:5" class="desk-sub-li"><a href="product.html">Outerwear</a></li>
-                            <li style="--delay:6" class="desk-sub-li"><a href="product.html">Accessories</a></li>
-                            <li style="--delay:7" class="desk-sub-li"><a href="product.html">Bags</a></li>
-                            <li style="--delay:8" class="desk-sub-li"><a href="product.html">UnderWear</a></li>
-                       
-                        </ul>
-                    </li>
-                        
-                            <li class="desk-li" id="dm"><a href="product.html"> Accessorie
-            
-                        <ul class="desk-sub">
-                            <li style="--delay:1" class="desk-sub-li"><a href="product.html">Drinkware</a></li>
-                            <li style="--delay:2" class="desk-sub-li"><a href="product.html">Purses</a></li>
-                            <li style="--delay:3" class="desk-sub-li"><a href="product.html">Wallets</a></li>
-                            <li style="--delay:4" class="desk-sub-li"><a href="product.html">Necklaces</a></li>
-                            <li style="--dplay:5" class="desk-sub-li"><a href="product.html">Socks</a></li>
-                            <li style="--delay:6" class="desk-sub-li"><a href="product.html">Hat & Hair</a></li>
-                            <li style="--delay:7" class="desk-sub-li"><a href="product.html">Scarves</a></li>
-                            <li style="--delay:8" class="desk-sub-li"><a href="product.html">Footwear</a></li>
-                            <li style="--delay:9" class="desk-sub-li"><a href="product.html">Boot Socks</a></li>
-        
-                        </ul>
-                    </li>
-                        <li class="desk-li brand"><a href="product.html">Brands</li>
-                </nav>
-              
-        
-                  
+
+
+
+                <div class="big-menu brand"><a href="product.html">Brands</a></div>
+            </div>
+        </nav>
+
+        <!--desktop nav-->
+        <nav id="desk-gnb">
+            <div class="desk-gnb">
+                <div class="desk-li">
+                    <a href="#">New Arrival</a></div>
+
+                <div class="desk-li" id="dm1">
+                    <a href="#"> Women</a>
+                    <ul class="desk-sub">
+                        <li style="--dealy:1" class="desk-sub-li"><a href="product.html">Dresses</a></li>
+                        <li style="--delay:2" class="desk-sub-li"><a href="product.html">Tops</a></li>
+                        <li style="--delay:3" class="desk-sub-li"><a href="product.html">Sweater & Wras</a></li>
+                        <li style="--delay:4" class="desk-sub-li"><a href="product.html">Jumpsutis & Rompers</a>
+                        </li>
+                        <li style="--delay:5" class="desk-sub-li"><a href="product.html">Bottoms</a></li>
+                        <li style="--delay:6" class="desk-sub-li"><a href="product.html">Outerwear</a></li>
+                        <li style="--delay:7" class="desk-sub-li"><a href="product.html">Accessories</a></li>
+                        <li style="--delay:8" class="desk-sub-li"><a href="product.html">FootWear</a></li>
+                        <li style="--delay:9" class="desk-sub-li"><a href="product.html">UnderWear</a></li>
+                        <li style="--delay:10" class="desk-sub-li"><a href="product.html">SleepWear</a></li>
+                    </ul>
+
+
+
+                </div>
+
+
+
+                <div class="desk-li" id="dm2"><a href="product.html">Men</a>
+                    <ul class="desk-sub">
+                        <li style="--delay:1" class="desk-sub-li"><a href="product.html">Shirts</a></li>
+                        <li style="--delay:2" class="desk-sub-li"><a href="product.html">Tees</a></li>
+                        <li style="--delay:3" class="desk-sub-li"><a href="product.html">Sweater & Hoodies</a></li>
+                        <li style="--delay:4" class="desk-sub-li"><a href="product.html">Bottoms</a></li>
+                        <li style="--delay:5" class="desk-sub-li"><a href="product.html">Outerwear</a></li>
+                        <li style="--delay:6" class="desk-sub-li"><a href="product.html">Accessories</a></li>
+                        <li style="--delay:7" class="desk-sub-li"><a href="product.html">Bags</a></li>
+                        <li style="--delay:8" class="desk-sub-li"><a href="product.html">UnderWear</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="desk-li" id="dm"><a href="product.html"> Accessorie </a>
+
+                    <ul class="desk-sub">
+                        <li style="--delay:1" class="desk-sub-li"><a href="product.html">Drinkware</a></li>
+                        <li style="--delay:2" class="desk-sub-li"><a href="product.html">Purses</a></li>
+                        <li style="--delay:3" class="desk-sub-li"><a href="product.html">Wallets</a></li>
+                        <li style="--delay:4" class="desk-sub-li"><a href="product.html">Necklaces</a></li>
+                        <li style="--dplay:5" class="desk-sub-li"><a href="product.html">Socks</a></li>
+                        <li style="--delay:6" class="desk-sub-li"><a href="product.html">Hat & Hair</a></li>
+                        <li style="--delay:7" class="desk-sub-li"><a href="product.html">Scarves</a></li>
+                        <li style="--delay:8" class="desk-sub-li"><a href="product.html">Footwear</a></li>
+                        <li style="--delay:9" class="desk-sub-li"><a href="product.html">Boot Socks</a></li>
+
+                    </ul>
+                </div>
+                <div class="desk-li brand"><a href="product.html">Brands</a></div>
+            </div>
+        </nav>
+
+
+
     </header>
     <main id="page1">
         <h1>Big Title</h1>
@@ -186,114 +188,133 @@
 
         <h2 class="new-bar">New Arrival</h2>
         <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
+                <div class="swiper-slide"> <img
+                        src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
+                    <h3>Long& Big title</h3>
+                    <h4>Cloth</h4>
+                </div>
             </div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide"> <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
-            <div class="swiper-slide">  <img src="./image/ZD182359S-BLI-2_1920x_515e5d03-19d9-40dd-b587-73dbf73184db_large.png" alt="navy">
-                <h3>Long& Big title</h3>
-                <h4>Cloth</h4></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
         </div>
-         <!-- Add Pagination -->
-         <div class="swiper-pagination"></div>
-         <!-- Add Arrows -->
-         <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>
-       
+        </div>
+        
+        <footer>
+            <div class="guide">Buying Guide
+                <div><a href="#">Shipping& Returns</a></div>
+                <div><a href="#">Sizing</a></div>
+                <div><a href="#">Terms of Service</a></div>
+                <div><a href="#">Privacy Policy</a></div>
+            </div>
+            <div class="company">Company
+            <div> <a href="about.html">Our company</a></div>
     </div>
-         <!-- Swiper JS -->
-
-
- <!-- Initialize Swiper -->
- <script>
- // jqurey-> remove html tag for tablet and desktop menu
-//  var mq = window.matchMedia('(min-width:768px)');
-
- 
-//  if(mq.matches == true){
-// $('.delete').remove();
-//  }
-
-;
- var swiper = new Swiper('.swiper-container', {
-
-     slidesPerView: 2,
-   paginationClickable: true,
-   nextButton: '.swiper-button-next',
-   prevButton: '.swiper-button-prev',
-        spaceBetween: 30
- });
-
-// jqurey-> remove html tag for tablet and desktop menu
- var mq = window.matchMedia('(min-width:1280px)');
-
- 
- if(mq.matches == true){
-    var swiper = new Swiper('.swiper-container', {
-
-slidesPerView: 4,
-paginationClickable: true,
-nextButton: '.swiper-button-next',
-prevButton: '.swiper-button-prev',
-   spaceBetween: 30
-});
- }
- 
- </script>
-    <footer>
-        <ul class="guide">Buying Guide
-            <li><a href="#">Shipping& Returns</a></li>
-            <li><a href="#">Sizing</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <ul class="company">Company
-            <li><a href="#">Our company</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="help">Help
-            <li><a href="#">Gift Card</a></li>
-        </ul>
-        <ul class="sns-container">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-        <div class="text-box">
+    <div><a href="about.html">Contact</a></div>
+   
+    <div class="help">Help
+        <div><a href="#">Gift Card</a></div>
+    </div>
+    <ul class="sns-container">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <div class="text-box">
         <p>goeounchoi9090@gmail.com</p>
         <p>613-804-1004</p>
         <p>All copyright: Goeun Choi</p>
-         </div>
+    </div>
     </footer>
+<!-- Swiper JS -->
 
+
+        <!-- Initialize Swiper -->
+        <script>
+            // jqurey-> remove html tag for tablet and desktop menu
+            //  var mq = window.matchMedia('(min-width:768px)');
+
+
+            //  if(mq.matches == true){
+            // $('.delete').remove();
+            //  }
+
+            ;
+            var swiper = new Swiper('.swiper-container', {
+
+                slidesPerView: 2,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30
+            });
+
+            // jqurey-> remove html tag for tablet and desktop menu
+            var mq = window.matchMedia('(min-width:1280px)');
+
+
+            if (mq.matches == true) {
+                var swiper = new Swiper('.swiper-container', {
+
+                    slidesPerView: 4,
+                    paginationClickable: true,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    spaceBetween: 30
+                });
+            }
+        </script>
 
 </body>
 
