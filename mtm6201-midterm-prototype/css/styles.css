@@ -314,7 +314,7 @@ p {
 }
 
 #form-box {
-    margin-top: 30%;
+    margin-top: 20%;
     min-width: 50%;
     height: 50px;
     left: 50%;
@@ -536,6 +536,7 @@ footer div {
 
 /*tablet mode*/
 @media (min-width:768px) {
+    #page1{height: 50vh;}
     #form-box {
         top: -74.5%
     }
@@ -543,11 +544,12 @@ footer div {
     .page2-container {
         min-width: 768px;
         display: grid;
+
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
 
     }
-
+#page2{margin-top:1rem}
     .con1 {
         grid-column: 1/2;
         grid-row: 1/3;
