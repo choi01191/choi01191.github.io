@@ -920,6 +920,7 @@ svg {
 }
 
 .about-page3 {
+
     background-color: var(--thrid-color);
 }
 
@@ -1020,13 +1021,17 @@ textarea {
         font-size: 1.6rem;
     }
 
+    .open-hour h4 {
+        padding: 2rem 0 0.5em 0;
+    }
+
     .about-page3 .fas {
 
         font-size: 30px;
     }
 
     .about-page3 p {
-        text-align: left;
+        text-align: center;
         padding: 0.5rem 1rem;
         font-size: 1.2rem;
     }
