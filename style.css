@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Rozha+One&display=swap');
+
+/* set default */
+
+:root {
+    --main-color: #ff9680;
+    --sub-color: #9590A9;
+    --thrid-color: #F6D2B7;
+    --main-font: 'Rozha One';
+    --sub-font: 'Markazi Text';
+}
+h1,h3,h5{text-align: center;
+    font-family:var(--main-font)
+}
+h2,h4,h6{
+    text-align: center;
+    font-family: var(--sub-font);
+}
+#developer p, #developer h1,#developer h2{
+    color:white
+}
+p{color:black;text-align: center;}
+@
+html {
+    font-family: 'Markazi Text', arial, 'Rozha One', serif;
+}
+h1{font-size: 2rem;color:black}
+h2{font-size: 1.5rem;color:black}
+/* header{position: absolute;} */
+body {
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* mobile menu  */
+#logo {display: block;
+    background-image:url('./image/logo-white.png') cover;
+cursor:pointer;
+    left:2rem;
+    position: absolute;
+    z-index: 11;
+    display: inline-block;
+    width: 80px;
+    height: auto;
+    padding-top: 1rem;
+}
+
+a {
+    text-align: center;
+    color: white
+}
+#home #developer p{text-shadow:5px 5px 5px black;}
+.menu-box {
+    z-index:2;
+    position: relative;
+    margin: 0 0 0 200px;
+    width: 64px;
+    height: 40px;
+}
+
+.mobile-menu a {
+    margin:0;
+    font-size: 20px;
+    color: var(--sub-color)
+}
+a.nav-link{
+    font-size: 2rem;
+}
+.mobile-menu{padding:0}
+.mobile-menu {
+    z-index: 1;
+    
+    transition: 1s;
+    left: -200%;
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(225, 225, 225, 0.9);
+    height: 100vh
+}
+ 
+ul.desktop-menu {
+    display: none;
+}
+
+/* hamberg menu effects */
+.hamberg {
+
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    float: right;
+    
+    margin-top: 1rem;
+
+}
+
+.line {
+    
+    top: 50%;
+    margin-top: -4px;
+    position: absolute;
+   
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 10px;
+    transition: ease 1s;
+
+}
+label{cursor:pointer}
+span.line:before,
+span.line:after {
+    
+    position: absolute;
+    background-color: white;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(0, -16px);
+
+ 
+
+}
+
+span.line:after {
+    transform: translate(0, 16px)
+}
+
+
+#check {
+    display: none;
+}
+
+#check:checked~div.menu-box label span:before,
+#check:checked~div.menu-box label span:after {
+    width: 60%;
+    z-index:20;
+    
+}
+
+#check:checked~.menu-box label span:before {
+    transform: translate(32px, -11px) rotate(45deg);
+    background-color: var(--sub-color);
+    
+}
+
+#check:checked~.menu-box label span:after {
+    background-color: var(--sub-color);
+    transform: translate(32px, 11px) rotate(-45deg);
+   
+}
+#check:checked~ .menu-box span.line{
+    background-color: var(--sub-color);
+}
+#check:checked~.mobile-menu {
+
+    left: 0;
+}
+
+#check:checked~.menu-box .hamberg {
+    animation: menu-a ease 1.5s forwards;
+}
+
+@keyframes menu-a {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+}
+/* arrow animation indicaiting going down */
+.fa-caret-down {
+    color: var(--main-color);
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: arrow ease-in-out infinite 2s
+}
+.data_box p,.data_box h2{padding:0.5rem}
+.btn1{color:black;}
+.btn2{color:white}
+.data_box{display: inline-block;padding: 10rem 0;}
+
+.fa-sign-in-alt {
+    font-size: 2rem;
+}
+.btn1{transform:rotate(180deg);padding-top:2rem !important}
+@keyframes arrow{
+    from {
+        opacity: 0.5;
+        transform: translate(-50%,0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%,150px);
+    }
+
+}
+
+.mobile-menu:first-child{
+    padding-top:10px
+}
+a.nav-link {
+
+    font-size: 2rem;
+    line-height: 50px;
+    font-family: 'Rozha One';
+}
+
+a.nav-link:hover {
+    color: #ff9680
+}
+
+main {
+    position: absolute;
+    top: 0
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden
+}
+
+.img-container {
+
+    width: 200%;
+    height: 100%;
+}
+
+.ra_item {
+    display: none;
+}
+
+/* radio for two diffrecnt type background */
+
+.item {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+.img-container div.item:nth-child(3) {
+    background-image: url("image/goni2-orange-21.png");
+    left: 0;
+    background-size: cover;
+    background-position: 100% 50%
+}
+
+.img-container div.item:nth-child(4) {
+    background-image: url("image/puple3.png");
+    background-size: cover;
+}
+
+/* label rage for controll page */
+.item label {
+    z-index: 1;
+    display: block;
+    width: 50vw;
+    position: absolute;
+    height: 100%;
+}
+
+/* radio1 page control */
+#ra1:checked~#designer {width: 70vw;}
+
+#ra1:checked~#developer{ width: 30vw;}
+
+
+#ra2:checked~#developer {
+    width: 75vw;    
+}
+
+#ra2:checked~#designer {
+    margin-left:-25vw
+ }
+ 
+
+
+.hiddenbox{display: none;}
+/* .data_box{width:80%;margin-top: 10rem!important} */
+
+
+ /* *******************
+**********************
+******tablet media***
+********************** */
+
+@media (min-width:768px) {
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a.nav-link {
+        font-size: 4rem;
+        line-height: 120px;
+        font-family: 'Rozha One';
+    }
+
+    a.nav-link:hover {
+        color: #ff9680
+    }
+
+    main {
+        position: absolute;
+        top: 0
+    }
+
+    #home {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden
+    }
+
+    .img-container {
+
+        width: 200%;
+        height: 100%;
+    }
+
+    .ra_item {
+        display: none;
+    }
+
+    /* radio for two diffrecnt type background */
+
+    .item {
+        display: block;
+        float: left;
+        width: 25%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+
+
+    .img-container div.item:nth-child(3) {
+        background-image: url("image/goni2-orange-21.png");
+        left: 0;
+        background-size: cover;
+        background-position: 100% 50%
+    }
+
+    .img-container div.item:nth-child(4) {
+        background-image: url("image/puple3.png");
+        background-size: cover;
+    }
+
+    /* label rage for controll page */
+    .item label {
+        display: block;
+        width: 50vw;
+        position: absolute;
+        height: 100%;
+    }
+
+    /* radio1 control */
+    #ra1:checked~#designer {}
+
+    #ra1:checked~#designer label {}
+
+    /* #ra1:checked~#developer {
+    
+    } */
+    /* radio2 control */
+
+
+
+    /* #ra1:checked~#designer {
+
+    margin-left: 20vw;
+} */
+
+    #ra2:checked~#developer {
+        
+    }
+}
+/* *******************
+
+desktop media
+********** */
+@media (min-width:1280px){
+
+
+}
