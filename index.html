@@ -6,73 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="image/logo-white.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/css/h1.css">
-  <title>Goni's Website</title>
-  <script>
-    //controll background color using jquery
-    $(function () {
-            $("#designer").click(function () {
-                $(".img-container").css("background-color", "#ff9680" );
-                $("#script1").css("display","block")
-                $("#script2").css("display","none");
-                $(".btn1").css("display","none")
-                
-                
-                
-            });
-          
-          });
-          $(function () {
-            $("#developer").click(function () {
-                $(".img-container").css("background-color", " #9590A9" );
-                $("#script2").css("display","block")
-                $("#script1").css("display","none")
-                $(".btn2").css("display","none")
-                $(".btn1").css("display")
-            });
-          
-          });
-        
-// $(function(){
-//   $("#developer").click(function)
-// });
 
-    
-  </script>
+  <link rel="stylesheet" href="/css/h1.css">
+  <link rel="stylesheet" href="style.css">
+  
+ <link rel="stylesheet" href="Swiper-3.4.2 3/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  
+  <title>Goni's Website</title>
+ 
 </head>
 
 <body>
+ 
   <header>
 
-    <nav class="nav sticky-top">
+
+    <nav class="nav fixed-top">
       <a class="logo-box" href="index.html">
-      <img id="logo" src="./image/logo-white.png" alt="logo" ></a>
+        <img id="logo" src="./image/logo-white.png" alt="logo"></a>
       <!--mobile hamberg menu -->
       <input type="checkbox" name="check" id="check">
       <div class="menu-box">
-      <label for="check" id="line-label" class="hamberg">
-        <span class="line"></span>
-      </label>
-    </div>
-        <ul class="mobile-menu">
-          <li class="nav-item mt-5">
-            <a class="nav-link pt-4" href="#home">&nbspHELLO!</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#about">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#portfolio">PORTFOLIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#contact">CONTACT</a>
-        </ul>
+        <label for="check" id="line-label" class="hamberg">
+          <span class="line"></span>
+        </label>
+      </div>
+      <ul class="mobile-menu">
+        <li class="nav-item mt-5">
+          <a class="nav-link pt-4" href="#home">&nbspHELLO!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#skills">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#contact">CONTACT</a>
+      </ul>
 
       <!-- desk-top menu -->
       <ul class="desktop-menu con-ulr nav justify-content-center">
@@ -92,55 +65,453 @@
     </nav>
   </header>
   <!-- home page -->
-  <main>
-  <section id="home">
-    <div class="img-container">
-      
-      
-      <!-- <input type="radio" name="rdo" class="ra_item" id="ra0" checked> -->
+  <main class="container-fulid px-0">
+    <section id="home" class="
+    ">
+      <div class="img-container">
+
+
+        <!-- <input type="radio" name="rdo" class="ra_item" id="ra0" checked> -->
         <input type="radio" name="rdo" class="ra_item" id="ra1">
         <input type="radio" name="rdo" class="ra_item" id="ra2">
         <div class="item" id="designer">
-            <label for="ra1" class="lst_btn"></label>
-            <div class="data_box align-middle container my-auto">
-              <h1 class="row justify-content-center ">Designer</h1>
-              <h2 class="">I am a part of Designer</h2>
-              <p id="script1" class="hiddenbox justify-content-center row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia praesentium incidunt harum? Quidem eveniet optio harum consequatur corporis .</p>
-              <i class="fas fa-sign-in-alt justify-content-center row btn1"></i>
-            </div>
+          <label for="ra1" class="lst_btn"></label>
+          <div class="data_box align-middle container my-auto">
+            <h1 class="row justify-content-center ">Designer</h1>
+            <h2 class="">I am a part of Designer</h2>
+            <p id="script1" class="hiddenbox justify-content-center row">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Enim mollitia praesentium incidunt harum? Quidem eveniet optio harum consequatur
+              corporis .</p>
+            <i class="fas fa-sign-in-alt justify-content-center row btn1"></i>
+          </div>
         </div><!-- desginer -->
         <div class="item" id="developer">
-            <label for="ra2" class="lst_btn"></label>
-            <div class="data_box container">
-              <h1 class="row justify-content-center ">Developer</h1>
-              <h2>I am a part of Deveopler</h2>
-        <p id="script2"class="hiddenbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a sunt aliquam cumque architecto ea! Iure non totam quaerat, earum hic velit voluptatum soluta doloremqu.</p>
-        <!-- <i class="fas fa-hand-point-right  justify-content-center row btn2"></i>
+          <label for="ra2" class="lst_btn"></label>
+          <div class="data_box container">
+            <h1 class="row justify-content-center ">Developer</h1>
+            <h2>I am a part of Deveopler</h2>
+            <p id="script2" class="hiddenbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a sunt
+              aliquam cumque architecto ea! Iure non totam quaerat, earum hic velit voluptatum soluta doloremqu.</p>
+            <!-- <i class="fas fa-hand-point-right  justify-content-center row btn2"></i>
         <i class="far fa-arrow-alt-circle-right"></i> -->
-        <i class="fas fa-sign-in-alt justify-content-center row btn2"></i>
-       
-            </div>
+            <i class="fas fa-sign-in-alt justify-content-center row btn2"></i>
+
+          </div>
         </div> <!-- deveoper -->
-    </div>  <!-- img-cotntainer -->
-    <i class="fas fa-caret-down"></i>
-  </section>
-  <!-- about pagge -->
-  <section id="about">
+      </div> <!-- img-cotntainer -->
+      <i class="fas fa-caret-down"></i>
+    </section>
+    <!-- about pagge -->
 
-  </section>
-  <!-- portfolio page -->
-  <section id="portfolio">
+    <section id="skills" class="row p-0">
+      <div class="row">
+        <div class=" container-fluid col-md-6 vw-100 vh-100 px-0" id="sk-design">
+          <h1 class="mb-5 text-white">My Design Skills</h1>
 
-  </section>
-  <!-- contact page -->
-  <section id="contact">
+          <div class="row">
+            <div class="skill col">
+              <h2 class="ml-4 text-white">PHOTOSHOP</h2>
 
-  </section>
-</main>
-  <footer>
+            </div>
+            <div class="skill col">
 
-  </footer>
+              <div class="progress-container mr-4 ">
 
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-4">
+            <div class="skill col">
+              <h2 class="ml-4 text-white">ILLUSTRATOR</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-4">
+
+
+            <div class="skill col">
+              <h2 class="ml-4 text-white">INDESIGN</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="row mt-4">
+
+
+            <div class="skill col">
+              <h2 class="ml-4 text-white ">XD</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="row mt-1">
+
+
+            <div class="skill col">
+              <h4 class="ml-4 mt-3 text-white">PREMIERE/AUDITION<br>LIGHTROOM</h4>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div> <!-- designer progress container -->
+        <div class="sk-develope container-fluid col-md-6 vw-100 vh-100">
+          <h1 class="mb-5 px-3  text-white">My Developing Skills</h1>
+
+          <div class="row">
+            <div class="skill col">
+              <h2 class="ml-4 text-white">HTML/CSS</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-4">
+            <div class="skill col">
+              <h2 class="ml-4 text-white">JAVASCRIPT</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-4">
+
+
+            <div class="skill col">
+              <h2 class="ml-4 text-white">J-QUREY</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="row mt-4">
+
+
+            <div class="skill col">
+              <h2 class="ml-4 text-white">BOOTSTRAP</h2>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="row mt-1">
+
+
+            <div class="skill col">
+              <h4 class="ml-4 mt-3 text-white">DRUPAL/SHOPIFY<br>WORDPRESS</h4>
+
+            </div>
+            <div class="skill col">
+
+              <div class="progress-container mr-4 ">
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%">
+                    <h4 class="text-white">ING..</h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div> <!-- progress container -->
+
+      </div>
+    </section>
+
+    <!-- portfolio page -->
+    <section id="portfolio row">
+      <div class="pf pf-page1 vw-100 vh-100 container-fluid px-0">
+        <h1 class="py-1 pb-3 my-md-5" >Developer Portfolio</h1>
+      
+
+          <a href="http://choi01191.github.io/mtm6201-midterm-prototype/" class="btn port-box pt-md-4" id="port-box1">
+           
+              <div class="card-body">
+                <h5 class="card-title">Website redesign</h5>
+
+                <p class="card-text">HTML,CSS,J-QUERY</p>
+              </div>
+           
+          </a>
+          <div class="cursor cursor1"></div>
+
+          <a href="http://choi01191.github.io/choi0119-mtm6130-final/" class="btn port-box mt-1  " id="port-box2">
+            
+         
+              <div class="card-body">
+                <h5 class="card-title">Website</h5>
+
+                <p class="card-text">HTML,CSS,J-QUERY</p>
+              </div>
+           
+          </a>
+          <div class="cursor cursor2"></div>
+
+      </div>
+      <div class="pf pf-page2 vw-100 vh-100 container-fluid px-0 py-5">
+        <h1 class="py-1 pb-3" >Designer Portfolio</h1>
+        <div class="swiper-container mb-5">
+          <div class="swiper-wrapper">
+         
+            <div class="swiper-slide pic1"></div>
+            <div class="swiper-slide pic2"></div>
+            <div class="swiper-slide pic3"></div>
+            <div class="swiper-slide pic4"></div>
+            <div class="swiper-slide pic5"></div>
+            
+          </div>
+          <div class="swiper-pagination mb-5"></div>
+        </div>
+      </div>
+    </section>
+    <!-- contact page -->
+    <section id="contact" class="row container-fulid vw-100 vh-100">
+     
+        <div class="contact-box col align-self-center">
+        <h1 class="text-center my-5 pt-5 p" >Contact Goni</h1>
+        <div class="mx-auto" style="width:120px">
+            <!--button components-->
+        <div class="btn-group-vertical my-3 pb-5 mx-auto" >
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg">
+                <a href="mailto:goeunchoi9090@gmail.com?title=hello" class="btn-secondary btn-lg" tabindex="-1"
+                    role="button" aria-disabled="true">Email</a>
+            </span>
+
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="sms:613-804-1004"
+                    class=" btn-secondary  btn-lg ">Text</a>
+            </span>
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="tel:613-804-1004"
+                    class="btn-secondary btn-lg">Call</a></span>
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="#"
+                    class="btn-secondary btn-lg">Linkedin</a></span>
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="#"
+                    class="btn-secondary btn-lg">GIthub</a></span>
+        </div>
+      </div>
+   
+        <p class="text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam, sapiente quod at atque magnam nisi
+            commodi! Atque molestiae molestias adipisci provident. Consequatur explicabo magni nisi ipsum deserunt,
+            tempora et.</p>
+            <p class="text-center">COPYRIGHT© 2020 Goeun Choi</p>
+          
+    
+       
+    </section>
+
+  </main>
+
+    
+
+
+  
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="Swiper-3.4.2 3/dist/js/swiper.min.js"></script>
+  
+    
+  <script>
+  
+    //controll background color using jquery
+    $(function () {
+      $("#designer").click(function () {
+        $(".img-container").css("background-color", "#ff9680");
+        $("#script1").css("display", "block")
+        $("#script2").css("display", "none");
+        $(".btn1").css("display", "none");
+
+
+
+      });
+
+    });
+    $(function () {
+      $("#developer").click(function () {
+        $(".img-container").css("background-color", " #9590A9");
+        $("#script2").css("display", "block")
+        $("#script1").css("display", "none")
+        $(".btn2").css("display", "none")
+        $(".btn1").css("display")
+      });
+
+    });
+    // Progress Bar Animate
+    $(function () {
+      window.sr = ScrollReveal();
+      sr.reveal(".progress-bar", {
+        origin: "left",
+        duration: 2000,
+        distance: "100%"
+      });
+
+    });
+
+// http://ahrengot.com/tutorials/greensock-javascript-animation
+
+var $cursor = $('.cursor');
+
+function moveCursor(e) {
+  $cursor.addClass('is-moving');
+  
+	TweenLite.to($cursor, 0.23, {
+    left: e.pageX,
+    top: e.pageY,
+    ease: Power4.easOut
+  });
+  
+  clearTimeout(timer);
+
+   var timer = setTimeout(function() {
+       $cursor.removeClass('is-moving');
+   }, 300);
+}
+
+$(window).on('mousemove', moveCursor);
+//swiper js
+
+var swiper = new Swiper(".swiper-container", {
+  pagination: ".swiper-pagination",
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflow: {
+    rotate: 100,
+    stretch: 0,
+    depth: 0,
+    modifier: 1,
+    slideShadows: true
+  },
+  loop: true
+});
+
+
+
+
+  </script>
 </body>
 
 </html>

@@ -10,24 +10,66 @@
     --main-font: 'Rozha One';
     --sub-font: 'Markazi Text';
 }
-h1,h3,h5{text-align: center;
-    font-family:var(--main-font)
+
+h1,
+h3,
+h5 {
+    text-align: center;
+    font-family: var(--main-font)
 }
-h2,h4,h6{
+
+h2,
+h4,
+h6 {
     text-align: center;
     font-family: var(--sub-font);
 }
-#developer p, #developer h1,#developer h2{
-    color:white
+
+#developer p,
+#developer h1,
+#developer h2 {
+    color: white
 }
-p{color:black;text-align: center;}
-@
-html {
+
+p {
+    color: var(--sub-color);
+    text-align: center;
+}
+
+html,
+body {
+
+
     font-family: 'Markazi Text', arial, 'Rozha One', serif;
 }
-h1{font-size: 2rem;color:black}
-h2{font-size: 1.5rem;color:black}
-/* header{position: absolute;} */
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 1.7rem;
+    color: var(--sub-color)
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: var(--sub-color)
+}
+
+header {
+    height: 120px;
+  
+    position: relative;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    z-index: 20;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -38,10 +80,11 @@ li {
 
 
 /* mobile menu  */
-#logo {display: block;
-    background-image:url('./image/logo-white.png') cover;
-cursor:pointer;
-    left:2rem;
+#logo {
+    display: block;
+    background-image: url('./image/logo-white.png') cover;
+    cursor: pointer;
+    left: 2rem;
     position: absolute;
     z-index: 11;
     display: inline-block;
@@ -54,35 +97,42 @@ a {
     text-align: center;
     color: white
 }
-#home #developer p{text-shadow:5px 5px 5px black;}
+
+/* #home #developer p,#home #developer h1,#home #developer h2{text-shadow:3px 3px 5px black;} */
 .menu-box {
-    z-index:2;
-    position: relative;
-    margin: 0 0 0 200px;
+    z-index: 2;
+    position: absolute;
+    /* margin: 0 0 0 14rem; */
     width: 64px;
     height: 40px;
+    right: 2rem;
 }
 
 .mobile-menu a {
-    margin:0;
+    margin: 0;
     font-size: 20px;
     color: var(--sub-color)
 }
-a.nav-link{
+
+a.nav-link {
     font-size: 2rem;
 }
-.mobile-menu{padding:0}
+
+.mobile-menu {
+    padding: 0
+}
+
 .mobile-menu {
     z-index: 1;
-    
+
     transition: 1s;
     left: -200%;
     position: absolute;
     width: 100vw;
-    background-color: rgba(225, 225, 225, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     height: 100vh
 }
- 
+
 ul.desktop-menu {
     display: none;
 }
@@ -96,17 +146,17 @@ ul.desktop-menu {
     width: 100%;
     box-sizing: border-box;
     float: right;
-    
+
     margin-top: 1rem;
 
 }
 
 .line {
-    
+
     top: 50%;
     margin-top: -4px;
     position: absolute;
-   
+
     display: block;
     background-color: white;
     width: 100%;
@@ -114,10 +164,14 @@ ul.desktop-menu {
     transition: ease 1s;
 
 }
-label{cursor:pointer}
+
+label {
+    cursor: pointer
+}
+
 span.line:before,
 span.line:after {
-    
+
     position: absolute;
     background-color: white;
     content: "";
@@ -125,7 +179,7 @@ span.line:after {
     height: 100%;
     transform: translate(0, -16px);
 
- 
+
 
 }
 
@@ -141,24 +195,26 @@ span.line:after {
 #check:checked~div.menu-box label span:before,
 #check:checked~div.menu-box label span:after {
     width: 60%;
-    z-index:20;
-    
+    z-index: 20;
+
 }
 
 #check:checked~.menu-box label span:before {
     transform: translate(32px, -11px) rotate(45deg);
     background-color: var(--sub-color);
-    
+
 }
 
 #check:checked~.menu-box label span:after {
     background-color: var(--sub-color);
     transform: translate(32px, 11px) rotate(-45deg);
-   
+
 }
-#check:checked~ .menu-box span.line{
+
+#check:checked~.menu-box span.line {
     background-color: var(--sub-color);
 }
+
 #check:checked~.mobile-menu {
 
     left: 0;
@@ -179,6 +235,7 @@ span.line:after {
         transform: rotate(180deg);
     }
 }
+
 /* arrow animation indicaiting going down */
 .fa-caret-down {
     color: var(--main-color);
@@ -189,31 +246,45 @@ span.line:after {
     transform: translateX(-50%);
     animation: arrow ease-in-out infinite 2s
 }
-.data_box p,.data_box h2{padding:0.5rem}
-.btn1{color:black;}
-.btn2{color:white}
-.data_box{display: inline-block;padding: 10rem 0;}
+
+
+.btn1 {
+    color: var(--sub-color)
+}
+
+.btn2 {
+    color: white
+}
+
+.data_box {
+    display: inline-block;
+}
 
 .fa-sign-in-alt {
     font-size: 2rem;
 }
-.btn1{transform:rotate(180deg);padding-top:2rem !important}
-@keyframes arrow{
+
+.btn1 {
+    transform: rotate(180deg);
+}
+
+@keyframes arrow {
     from {
         opacity: 0.5;
-        transform: translate(-50%,0px);
+        transform: translate(-50%, 0px);
     }
 
     to {
         opacity: 1;
-        transform: translate(-50%,150px);
+        transform: translate(-50%, 150px);
     }
 
 }
 
-.mobile-menu:first-child{
-    padding-top:10px
+.mobile-menu:first-child {
+    padding-top: 10px
 }
+
 a.nav-link {
 
     font-size: 2rem;
@@ -225,10 +296,10 @@ a.nav-link:hover {
     color: #ff9680
 }
 
-main {
-    position: absolute;
+/* main {
+    /* position: absolute;
     top: 0
-}
+} */ 
 
 #home {
     width: 100vw;
@@ -260,15 +331,20 @@ main {
 
 
 .img-container div.item:nth-child(3) {
-    background-image: url("image/goni2-orange-21.png");
+    background-image: url("image/goni2-plain.png");
     left: 0;
     background-size: cover;
-    background-position: 100% 50%
+    background-position: 100% 50%;
+    display: flex;
+    align-items: center;
 }
 
 .img-container div.item:nth-child(4) {
-    background-image: url("image/puple3.png");
+
+    align-items: center;
+    background-image: url(image/puple3.png);
     background-size: cover;
+    display: flex;
 }
 
 /* label rage for controll page */
@@ -277,37 +353,294 @@ main {
     display: block;
     width: 50vw;
     position: absolute;
-    height: 100%;
+    height: 100vw;
 }
 
 /* radio1 page control */
-#ra1:checked~#designer {width: 70vw;}
+#ra1:checked~#designer {
+    position: relative;
+    width: 70vw;
+}
 
-#ra1:checked~#developer{ width: 30vw;}
+#ra1:checked~#developer {
+    width: 30vw;
+}
 
 
 #ra2:checked~#developer {
-    width: 75vw;    
+    position: relative;
+    width: 75vw;
 }
 
 #ra2:checked~#designer {
-    margin-left:-25vw
- }
- 
+    margin-left: -25vw
+}
 
 
-.hiddenbox{display: none;}
-/* .data_box{width:80%;margin-top: 10rem!important} */
+
+.hiddenbox {
+    display: none;
+}
+
+/* skill section */
+#skills {
+    width: 100vw;
+}
+
+#skills .sk-develope {
+    margin: 0;
+    background-color: var(--sub-color);
+    padding: 5rem 0;
+}
+
+#skills h2 {
+
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#skills h4 {
+    font-size: 0.9rem;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+#skills .skill {
+    justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#skills .skill .progress-container {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    font-size: 1.125rem;
+    color: #f3f3f3;
+}
+
+#skills .progress {
+    border-radius: 2rem;
 
 
- /* *******************
+    background-color: #373737;
+}
+
+#skills .progress-container .progress .progress-bar {
+    padding-top: .35rem;
+    position: relative;
+    height: 1.125rem;
+    background-color: var(--main-color);
+}
+
+#sk-design {
+    padding: 5rem 0;
+    background-color: var(--main-color);
+}
+
+#skills #sk-design .progress-container .progress .progress-bar {
+    background-color: var(--sub-color);
+}
+
+
+/* portfolio page */
+
+
+#portfolio {
+    width: 100vw;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s;
+    height: 100vw;
+}
+
+#portfolio h1 {
+    text-align: center;
+    color: white
+}
+
+.port-box {
+
+
+    display: block;
+    width: 250px;
+    height: 100px;
+    margin: 2rem auto
+}
+
+.card-body {
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    padding: 1rem;
+    box-shadow: #F6D2B7 10px -5px 20px;
+    border: #F6D2B7 double 5px;
+
+}
+
+.card {
+    border: none
+}
+
+.pf-page1 {
+    background-image: url('/image/purple-bg2.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: none;
+    background-position: 50%;
+}
+
+.pf {
+    padding: 3rem 0;
+}
+
+.pf-page2 {
+    background-image: url('/image/orange-bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: none;
+    background-position: 50%;
+}
+
+.cursor {
+
+
+    opacity: 0.65;
+    background-size: cover;
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 10%;
+    left: 20%;
+    margin: -24px 0 0 -24px;
+    /* border: 3px solid #f80759; */
+    border-radius: 100px;
+    backface-visibility: hidden;
+    transition: transform 0.3s ease-out;
+    z-index: 999;
+}
+
+.cursor1 {
+    background-image: url(/image/hompage1.png);
+
+
+}
+
+.cursor2 {
+    background-image: url(/image/hompage2.png);
+
+}
+
+
+#port-box2:hover+div.cursor2 {
+    display: block
+}
+
+#port-box1:hover+div.cursor1 {
+    display: block
+}
+
+.is-moving {
+    opacity: 0.7;
+
+    border-radius: 50px;
+    backface-visibility: hidden;
+    transition: transform 0.3s ease-out;
+    z-index: 999;
+    transform: scale(0.9);
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* portfoilo page2 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 90%;
+    padding-bottom: 6rem;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.pic1 {
+    background-image: url('image/doctor.png');
+
+}
+
+.pic2 {
+    background-image: url('image/goni-zom.png');
+}
+
+.pic3 {
+    background-image: url('image/restore.jpg');
+}
+
+.pic4 {
+    background-image: url('image/poster1.jpg');
+}
+
+.pic5 {
+    background-image: url('image/frog-1335022_1920\ copy.jpg');
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--thrid-color) !important
+}
+
+
+/* contacnt page */
+
+#contact{
+    
+    
+    background-color:var(--thrid-color)
+}
+
+.btn-secondary{
+    background-color: var(--sub-color);
+}
+
+
+/*footer  */
+.contact-box{
+     background-color:var(--thrid-color)
+}
+p{color: var(--sub-color);}
+/* *******************
 **********************
 ******tablet media***
 ********************** */
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
 
     .nav {
+
         display: flex;
         justify-content: space-around;
     }
@@ -357,7 +690,7 @@ main {
 
 
     .img-container div.item:nth-child(3) {
-        background-image: url("image/goni2-orange-21.png");
+
         left: 0;
         background-size: cover;
         background-position: 100% 50%
@@ -373,35 +706,72 @@ main {
         display: block;
         width: 50vw;
         position: absolute;
-        height: 100%;
+        height: 100vw;
     }
 
-    /* radio1 control */
-    #ra1:checked~#designer {}
+    .data_box p {
+        padding: 3rem;
+    }
 
-    #ra1:checked~#designer label {}
-
-    /* #ra1:checked~#developer {
-    
+    /* portfolio vertical text heading */
+    /* .pf h1{transform:rotate(-90deg);}
+    .vertical1{
+        position: absolute;
+        left:0%;
+        bottom: 60%;    
     } */
-    /* radio2 control */
-
-
-
-    /* #ra1:checked~#designer {
-
-    margin-left: 20vw;
-} */
-
-    #ra2:checked~#developer {
-        
+    .card-body {
+        width: 40vw;
+        height: 10vh;
     }
-}
-/* *******************
 
+    .port-box {
+
+
+        display: block;
+        width: 40vw;
+        height: 20vh;
+        margin: 1rem auto
+    }
+
+}
+
+/* end of mediaquery */
+
+/* *******************
 desktop media
 ********** */
-@media (min-width:1280px){
+@media (min-width:1280px) {
+    a.nav-link {
+        font-size: 1.5rem;
+        line-height: 50px;
+        font-family: 'Rozha One';
+    }
 
+
+    .menu-box {
+        display: none;
+    }
+
+    ul.desktop-menu {
+        display: block;
+    }
+
+    .desktop-menu li {
+
+        float: left;
+    }
+
+    .desktop-menu li a {
+        margin-left: 25rem;
+    }
+
+
+
+    .pf h1 {
+        font-size: 2.5rem;
+    }
+
+   
 
 }

@@ -1,0 +1,215 @@
+// body {
+//     background: #262E31;
+//     font-family: "Gill sans", sans-serif;
+//     color: #FFC107;
+//   }
+  
+//   h1 {
+//     font-weight: normal;
+//     margin: 30px 0 80px 0;
+//     text-align: center;
+//   }
+  
+//   p {
+//     font-weight: normal;
+//     font-size: 22px;
+//     clear: both;
+//     text-align: center;
+//   }
+  
+//   div {
+//     width: 30%;
+//     margin: 0 1.5%;
+//     height: 150px;
+//     text-align: center;
+//     float: left;
+//   }
+  
+//   progress {
+//     appearance: none;
+//     position: relative;
+//     width: 100%;
+//     height: 18px;
+//   }
+  
+//   @keyframes flip {
+//     0%   { transform: perspective(200px) rotateX(0) rotateY(180deg); }
+//     50%  { transform: perspective(200px) rotateX(0) rotateY(0); }
+//     100% { transform: perspective(200px) rotateX(180deg) rotateY(0); }
+//   }
+  
+//   .p1 {
+//     progress {
+//       width: 48px;
+//       height: 48px;
+//       animation: flip 1.2s infinite ease-in-out;
+//     }
+  
+//     progress::-webkit-progress-bar {
+//       background: #FFEE58;
+//     }
+  
+//     progress::-webkit-progress-value {
+//       background: transparent;
+//     }
+//   }
+  
+//   .p2 {
+//     progress::-webkit-progress-bar {
+//       background-color: #e1e1e1;
+//     }
+  
+//     progress::-webkit-progress-value {
+//       background: linear-gradient(45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0, 0, 0, .1) 66%, transparent 66%);
+//       background-color: #ff7584;
+//       background-size: 40px 20px;
+//     }
+//   }
+  
+//   @keyframes spin {
+//     0% { transform: rotate(0deg); }
+//     100% { transform: rotate(360deg); }
+//   }
+  
+//   .p3 {
+//     margin-top: -25px;
+  
+//     progress {
+//       width: 48px;
+//       height: 48px;
+//     }
+  
+//     progress::before {
+//       content: '';
+//       display: block;
+//       width: 48px;
+//       height: 48px;
+//       background: transparent;
+//       border: 10px solid rgba(255, 255, 255, 0.1);
+//       border-left: 10px solid #ffffff;
+//       border-radius: 100%;
+//       animation: spin 0.6s linear infinite;
+//     }
+  
+//     progress::-webkit-progress-bar {
+//       background: transparent;
+//     }
+  
+//     progress::-webkit-progress-value {
+//       background: transparent;
+//     }
+//   }
+  
+//   @keyframes hithit {
+//     0%   { left: 0; }
+//     100%  { left: 70%; }
+//   }
+  
+//   .p4 {
+//     progress::-webkit-progress-bar {
+//       background: #e1e1e1;
+//     }
+  
+//     progress::-webkit-progress-value {
+//       background: #e1e1e1;
+//     }
+  
+//     progress::before {
+//       top: 0;
+//       left: 0;
+//       content: '';
+//       position: absolute;
+//       height: 18px;
+//       width: 30%;
+//       background: #009688;
+//       animation: hithit 1.2s linear infinite alternate;
+//     }
+//   }
+  
+//   @keyframes shift {
+//     0%   { left: 0%; }
+//     100%  { left: -9900%; }
+//   }
+  
+//   .p5 {
+//     clear: both;
+//     margin-top: 16px;
+//     progress {
+//       text-align: left;
+//       overflow: hidden;
+//     }
+  
+//     progress::-webkit-progress-bar,
+//     progress::-webkit-progress-value {
+//       background: white;
+//     }
+  
+//     progress::before {
+//       content: '';
+//       width: 10000%;
+//       height: 18px;
+//       position: absolute;
+//       background: linear-gradient(-45deg, transparent 33%, #BA68C8 33%, #BA68C8 66%, transparent 66%);
+//       background-size: 40px 20px;
+//       animation: shift 200s linear infinite;
+//     }
+//   }
+  
+//   @keyframes expand {
+//     0%,
+//     80%,
+//     100% {
+//       box-shadow: 0 0 #90A4AE;
+//       height: 48px;
+//     }
+//     40% {
+//       box-shadow: 0 -22px #90A4AE;
+//       height: 58px;
+//     }
+//   }
+  
+//   .p6  {
+//     progress {
+//       height: 48px;
+//       width: 11px;
+//       animation: expand 1.2s infinite ease-in-out;
+//       animation-delay: -0.32s;
+//     }
+  
+//     progress::-webkit-progress-bar {
+//       background: transparent;
+//     }
+  
+//     progress::before {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 36px;
+//       width: 11px;
+//       height: 48px;
+//       background: #90A4AE;
+//       animation: expand 1.2s infinite ease-in-out;
+//     }
+  
+//     progress::after {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 18px;
+//       width: 11px;
+//       height: 48px;
+//       background: #90A4AE;
+//       animation: expand 1.2s infinite ease-in-out;
+//       animation-delay: -0.16s;
+//     }
+  
+//     progress::-webkit-progress-value {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 11px !important;
+//       height: 100%;
+//       background: #90A4AE;
+//     }
+//   }
