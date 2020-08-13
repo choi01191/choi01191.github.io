@@ -63,7 +63,7 @@
   </header>
   <!-- home page -->
   <main class="container-fulid px-0">
-    <section id="home" class="
+    <section id="home" class="page
     ">
       <div class="img-container">
 
@@ -100,9 +100,9 @@
     </section>
     <!-- about pagge -->
 
-    <section id="skills" class="row p-0">
+    <section id="skills" class="page row p-0">
       <div class="row">
-        <div class=" container-fluid col-md-6 vw-100 vh-100 px-0" id="sk-design">
+        <div class="trans2 container-fluid col-md-6 vw-100 vh-100 px-0" id="sk-design">
           <h1 class="py-5 text-white">My Design Skills</h1>
 
           <div class="row skill-box">
@@ -217,7 +217,7 @@
           </div>
 
         </div> <!-- designer progress container -->
-        <div class="sk-develope container-fluid col-md-6 vw-100 vh-100">
+        <div class="trans2 sk-develope container-fluid col-md-6 vw-100 vh-100">
           <h1 class="py-5 px-3  text-white">My Developing Skills</h1>
 
           <div class="skill-box row">
@@ -337,9 +337,9 @@
     </section>
 
     <!-- portfolio page -->
-    <section id="portfolio" class="row p-0 vw-100 vh-100">
+    <section id="portfolio" class="row p-0 vw-100 vh-100 page">
       <div class="pf pf-page1 vw-100 vh-100 container-fluid px-0">
-        <h1 class="port-h1 py-1 pb-3 my-md-5">Developer Portfolio</h1>
+        <h1 class="port-h1 py-1 pb-3 my-md-5 trans ">Developer Portfolio</h1>
 
 
         <a href="http://choi01191.github.io/mtm6201-midterm-prototype/" class="btn port-box pt-md-4" id="port-box1">
@@ -368,9 +368,9 @@
       </div>
 
     </section>
-    <section id="portfolio2" class="row p-0 vw-100 vh-100">
+    <section id="portfolio2" class="page row p-0 vw-100 vh-100">
       <div class="pf pf-page2 vw-100 vh-100 container-fluid p-0 py-5">
-        <h1 class="port-h1 py-1 pb-3">Designer Portfolio</h1>
+        <h1 class="trans port-h1 py-1 pb-3">Designer Portfolio</h1>
         <div class="swiper-container mb-5">
           <div class="swiper-wrapper">
 
@@ -389,10 +389,10 @@
       </div>
     </section>
     <!-- contact page -->
-    <section id="contact" class="container-fluid p-0 vw-100 vh-100">
+    <section id="contact" class="page container-fluid p-0 vw-100 vh-100">
 
       <div class="contact-box col align-self-center">
-        <h1 class="text-center py-5">Contact Goni</h1>
+        <h1 class="text-center trans  py-5">Contact Goni</h1>
         <div class="mx-auto" style="width:120px">
           <!--button components-->
           <div class="btn-group-vertical my-3 pb-5 mx-auto">
@@ -412,11 +412,11 @@
                 class="btn-secondary btn-lg">GIthub</a></span>
           </div>
         </div>
-        <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam, sapiente
+        <p class="trans text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam, sapiente
           quod at atque magnam nisi
           commodi! Atque molestiae molestias adipisci provident. Consequatur explicabo magni nisi ipsum deserunt,
           tempora et.</p>
-        <h5 class="text-center">COPYRIGHT© 2020 Goeun Choi</h5>
+        <h5 class="trans text-center">COPYRIGHT© 2020 Goeun Choi</h5>
 
 
       </div>
@@ -435,6 +435,26 @@
 
 
   <script>
+    // //page wheel scrolling smothly
+    $(function(){
+      var p = $(".page");
+      p.on("mousewheel DOMMouseScroll", function(e){
+        var oe = e.originalEvent;
+        var sr_top = $(window).scrollTop();
+        var ht = parseInt($(this).height());
+        if(oe.wheelDelta < 0){
+          $("body, html").not(":animated").animate({"scrollTop" : "+="+ht+"px"});
+        } else {
+          $("body, html").not(":animated").animate({"scrollTop": "-="+ht+"px"});
+        }
+      });
+      p.mouseover(function(){
+            $(this).find(".trans").addClass("on");
+            $(this).find(".trans2").addClass("on");
+            $(this).find(".btn").addClass("on")
+        });
+      
+    });
     //controll background color using jquery
     $(function () {
       $("#designer").click(function () {
@@ -514,6 +534,7 @@
 
       loop: true
     });
+
   </script>
 </body>
 
