@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Rozha+One&display=swap');
 
 /* set default */
-
+*{font-size: 17px;}
 :root {
     --main-color: #ff9680;
     --sub-color: #9590A9;
@@ -59,13 +59,14 @@ h2 {
 }
 
 header {
-    height: 120px;
+    /* height: 120px; */
   
     position: relative;
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.95);
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.3);
     position: sticky;
     z-index: 20;
 }
@@ -82,7 +83,7 @@ li {
 /* mobile menu  */
 #logo {
     display: block;
-    background-image: url('./image/logo-white.png') cover;
+    background-image: url('./image/logo-white.png')
     cursor: pointer;
     left: 2rem;
     position: absolute;
@@ -99,15 +100,21 @@ a {
 }
 
 /* #home #developer p,#home #developer h1,#home #developer h2{text-shadow:3px 3px 5px black;} */
+
+
 .menu-box {
-    z-index: 2;
+    z-index: 20;
     position: absolute;
-    /* margin: 0 0 0 14rem; */
+    /* argin: 0 0 0 3rem; */
     width: 64px;
     height: 40px;
-    right: 2rem;
+    margin-left:calc(100vw / 1.5)
+   
+   
 }
-
+/* #check +div.menu-box{
+    right:4rem;
+} */
 .mobile-menu a {
     margin: 0;
     font-size: 20px;
@@ -124,7 +131,6 @@ a.nav-link {
 
 .mobile-menu {
     z-index: 1;
-
     transition: 1s;
     left: -200%;
     position: absolute;
@@ -431,6 +437,7 @@ a.nav-link:hover {
 }
 
 #skills .progress {
+    height: 1.5rem;
     border-radius: 2rem;
 
 
@@ -440,7 +447,7 @@ a.nav-link:hover {
 #skills .progress-container .progress .progress-bar {
     padding-top: .35rem;
     position: relative;
-    height: 1.125rem;
+    height: 1.5rem;
     background-color: var(--main-color);
 }
 
@@ -463,30 +470,31 @@ a.nav-link:hover {
     height: 100vw;
 }
 
-#portfolio h1 {
+.port-h1{
     text-align: center;
     color: white
 }
 
 .port-box {
 
-
+width: 50vw;
     display: block;
-    width: 250px;
-    height: 100px;
+    
     margin: 2rem auto
 }
 
 .card-body {
     background-color: white;
-    width: 250px;
-    height: 100px;
+    width: 50vw;
+    height: 20vh;
     padding: 1rem;
     box-shadow: #F6D2B7 10px -5px 20px;
     border: #F6D2B7 double 5px;
 
 }
-
+.card-title{
+    margin-bottom: 0;
+}
 .card {
     border: none
 }
@@ -496,7 +504,7 @@ a.nav-link:hover {
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: 50%;
 }
 
@@ -505,11 +513,12 @@ a.nav-link:hover {
 }
 
 .pf-page2 {
+   
     background-image: url('/image/orange-bg.png');
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;    
     background-position: 50%;
 }
 
@@ -586,11 +595,18 @@ body {
 
 }
 
+.swiper-button-prev { background-image: url('/image/next.png');
+    transform: rotate(180deg);
+    width: 150px;
 
+}.swiper-button-next{
+    background-image: url('/image/next.png');
+    ;width: 150px;
+}
 
 .pic1 {
-    background-image: url('image/doctor.png');
-
+    background-image: url('image/doctor.png');    width: 300px;
+    
 }
 
 .pic2 {
@@ -610,7 +626,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--thrid-color) !important
+    background: var(--sub-color) !important
 }
 
 
@@ -618,12 +634,13 @@ body {
 
 #contact{
     
-    
+    background-color:var(--thrid-color);
     background-color:var(--thrid-color)
 }
 
 .btn-secondary{
     background-color: var(--sub-color);
+    border:none
 }
 
 
@@ -632,13 +649,21 @@ body {
      background-color:var(--thrid-color)
 }
 p{color: var(--sub-color);}
+
+#contact h5{
+    color:var(--sub-color);
+    margin-bottom: 0;
+}
+
+
+
 /* *******************
 **********************
 ******tablet media***
 ********************** */
 
 @media screen and (min-width:768px) {
-
+*{font-size: 18px;}
     .nav {
 
         display: flex;
@@ -655,11 +680,23 @@ p{color: var(--sub-color);}
         color: #ff9680
     }
 
-    main {
-        position: absolute;
-        top: 0
+    .skill-box{padding-top: 2rem;}
+    .progress {
+        display: -ms-flexbox;
+        display: flex;
+        height: 2rem;
+        overflow: hidden;
+        line-height: 0;
+        font-size: .75rem;
+        background-color: #e9ecef;
+        border-radius: .25rem;
     }
-
+    #skills .progress-container .progress .progress-bar {
+        padding-top: .35rem;
+        position: relative;
+        height: 2rem;
+        background-color: var(--main-color);
+    }
     #home {
         width: 100vw;
         height: 100vh;
@@ -733,6 +770,15 @@ p{color: var(--sub-color);}
         height: 20vh;
         margin: 1rem auto
     }
+    .pf-page2 {
+   
+        background-image: url('/image/skin-orange.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;    
+        background-position: 50%;
+    }
 
 }
 
@@ -742,13 +788,19 @@ p{color: var(--sub-color);}
 desktop media
 ********** */
 @media (min-width:1280px) {
+
+    *{font-size: 20px;}
+    p{font-size: 1.2rem;}
     a.nav-link {
         font-size: 1.5rem;
         line-height: 50px;
         font-family: 'Rozha One';
     }
 
-
+    .card-body {
+        width: 40vw;
+        height: 14vh;
+    }
     .menu-box {
         display: none;
     }

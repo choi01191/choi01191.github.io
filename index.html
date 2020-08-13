@@ -7,19 +7,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="image/logo-white.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="/css/h1.css">
-  <link rel="stylesheet" href="style.css">
-  
- <link rel="stylesheet" href="Swiper-3.4.2 3/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="swiper-3.4.2/dist/css/swiper.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Goni's Website</title>
- 
+
 </head>
 
 <body>
- 
+
   <header>
 
 
@@ -28,14 +25,14 @@
         <img id="logo" src="./image/logo-white.png" alt="logo"></a>
       <!--mobile hamberg menu -->
       <input type="checkbox" name="check" id="check">
-      <div class="menu-box">
+      <div class="menu-box position-fixed">
         <label for="check" id="line-label" class="hamberg">
           <span class="line"></span>
         </label>
       </div>
       <ul class="mobile-menu">
         <li class="nav-item mt-5">
-          <a class="nav-link pt-4" href="#home">&nbspHELLO!</a>
+          <a class="nav-link pt-4" href="#home">HELLO!</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#skills">ABOUT</a>
@@ -53,7 +50,7 @@
           <a class="nav-link" href="#home">HELLO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ml-5" href="#about">ABOUT</a>
+          <a class="nav-link ml-5" href="#skills">ABOUT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link ml-5" href="#portfolio">PORTFOLIO</a>
@@ -106,9 +103,9 @@
     <section id="skills" class="row p-0">
       <div class="row">
         <div class=" container-fluid col-md-6 vw-100 vh-100 px-0" id="sk-design">
-          <h1 class="mb-5 text-white">My Design Skills</h1>
+          <h1 class="py-5 text-white">My Design Skills</h1>
 
-          <div class="row">
+          <div class="row skill-box">
             <div class="skill col">
               <h2 class="ml-4 text-white">PHOTOSHOP</h2>
 
@@ -221,9 +218,9 @@
 
         </div> <!-- designer progress container -->
         <div class="sk-develope container-fluid col-md-6 vw-100 vh-100">
-          <h1 class="mb-5 px-3  text-white">My Developing Skills</h1>
+          <h1 class="py-5 px-3  text-white">My Developing Skills</h1>
 
-          <div class="row">
+          <div class="skill-box row">
             <div class="skill col">
               <h2 class="ml-4 text-white">HTML/CSS</h2>
 
@@ -340,101 +337,104 @@
     </section>
 
     <!-- portfolio page -->
-    <section id="portfolio row">
+    <section id="portfolio" class="row p-0 vw-100 vh-100">
       <div class="pf pf-page1 vw-100 vh-100 container-fluid px-0">
-        <h1 class="py-1 pb-3 my-md-5" >Developer Portfolio</h1>
-      
+        <h1 class="port-h1 py-1 pb-3 my-md-5">Developer Portfolio</h1>
 
-          <a href="http://choi01191.github.io/mtm6201-midterm-prototype/" class="btn port-box pt-md-4" id="port-box1">
-           
-              <div class="card-body">
-                <h5 class="card-title">Website redesign</h5>
 
-                <p class="card-text">HTML,CSS,J-QUERY</p>
-              </div>
-           
-          </a>
-          <div class="cursor cursor1"></div>
+        <a href="http://choi01191.github.io/mtm6201-midterm-prototype/" class="btn port-box pt-md-4" id="port-box1">
 
-          <a href="http://choi01191.github.io/choi0119-mtm6130-final/" class="btn port-box mt-1  " id="port-box2">
-            
-         
-              <div class="card-body">
-                <h5 class="card-title">Website</h5>
+          <div class="card-body">
+            <h5 class="card-title">Website redesign</h5>
 
-                <p class="card-text">HTML,CSS,J-QUERY</p>
-              </div>
-           
-          </a>
-          <div class="cursor cursor2"></div>
+            <p class="card-text">HTML,CSS,J-QUERY</p>
+          </div>
+
+        </a>
+        <div class="cursor cursor1"></div>
+
+        <a href="http://choi01191.github.io/choi0119-mtm6130-final/" class="btn port-box mt-1  " id="port-box2">
+
+
+          <div class="card-body">
+            <h5 class="card-title">Website</h5>
+
+            <p class="card-text">HTML,CSS,J-QUERY</p>
+          </div>
+
+        </a>
+        <div class="cursor cursor2"></div>
 
       </div>
-      <div class="pf pf-page2 vw-100 vh-100 container-fluid px-0 py-5">
-        <h1 class="py-1 pb-3" >Designer Portfolio</h1>
+
+    </section>
+    <section id="portfolio2" class="row p-0 vw-100 vh-100">
+      <div class="pf pf-page2 vw-100 vh-100 container-fluid p-0 py-5">
+        <h1 class="port-h1 py-1 pb-3">Designer Portfolio</h1>
         <div class="swiper-container mb-5">
           <div class="swiper-wrapper">
-         
+
             <div class="swiper-slide pic1"></div>
             <div class="swiper-slide pic2"></div>
             <div class="swiper-slide pic3"></div>
             <div class="swiper-slide pic4"></div>
             <div class="swiper-slide pic5"></div>
-            
+
           </div>
-          <div class="swiper-pagination mb-5"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
         </div>
       </div>
     </section>
     <!-- contact page -->
-    <section id="contact" class="row container-fulid vw-100 vh-100">
-     
-        <div class="contact-box col align-self-center">
-        <h1 class="text-center my-5 pt-5 p" >Contact Goni</h1>
+    <section id="contact" class="container-fluid p-0 vw-100 vh-100">
+
+      <div class="contact-box col align-self-center">
+        <h1 class="text-center py-5">Contact Goni</h1>
         <div class="mx-auto" style="width:120px">
-            <!--button components-->
-        <div class="btn-group-vertical my-3 pb-5 mx-auto" >
+          <!--button components-->
+          <div class="btn-group-vertical my-3 pb-5 mx-auto">
             <span class="btn btn-secondary btn-lg mb-3 rounded-lg">
-                <a href="mailto:goeunchoi9090@gmail.com?title=hello" class="btn-secondary btn-lg" tabindex="-1"
-                    role="button" aria-disabled="true">Email</a>
+              <a href="mailto:goeunchoi9090@gmail.com?title=hello" class="btn-secondary btn-lg" tabindex="-1"
+                role="button" aria-disabled="true">Email</a>
             </span>
 
             <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="sms:613-804-1004"
-                    class=" btn-secondary  btn-lg ">Text</a>
+                class=" btn-secondary  btn-lg ">Text</a>
             </span>
             <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="tel:613-804-1004"
-                    class="btn-secondary btn-lg">Call</a></span>
+                class="btn-secondary btn-lg">Call</a></span>
             <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="#"
-                    class="btn-secondary btn-lg">Linkedin</a></span>
+                class="btn-secondary btn-lg">Linkedin</a></span>
             <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="#"
-                    class="btn-secondary btn-lg">GIthub</a></span>
+                class="btn-secondary btn-lg">GIthub</a></span>
+          </div>
         </div>
+        <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam, sapiente
+          quod at atque magnam nisi
+          commodi! Atque molestiae molestias adipisci provident. Consequatur explicabo magni nisi ipsum deserunt,
+          tempora et.</p>
+        <h5 class="text-center">COPYRIGHT© 2020 Goeun Choi</h5>
+
+
       </div>
-   
-        <p class="text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam, sapiente quod at atque magnam nisi
-            commodi! Atque molestiae molestias adipisci provident. Consequatur explicabo magni nisi ipsum deserunt,
-            tempora et.</p>
-            <p class="text-center">COPYRIGHT© 2020 Goeun Choi</p>
-          
-    
-       
     </section>
 
   </main>
 
-    
 
 
-  
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-  <script src="Swiper-3.4.2 3/dist/js/swiper.min.js"></script>
-  
-    
+  <script src="swiper-3.4.2/dist/js/swiper.min.js"></script>
+
+
   <script>
-  
     //controll background color using jquery
     $(function () {
       $("#designer").click(function () {
@@ -451,10 +451,11 @@
     $(function () {
       $("#developer").click(function () {
         $(".img-container").css("background-color", " #9590A9");
-        $("#script2").css("display", "block")
-        $("#script1").css("display", "none")
-        $(".btn2").css("display", "none")
-        $(".btn1").css("display")
+        $("#script2").css("display", "block");
+        $("#script1").css("display", "none");
+        $(".btn2").css("display", "none");
+        $(".btn1").css("display");
+        // $('menu-box'),css("right", "2rem")
       });
 
     });
@@ -469,48 +470,50 @@
 
     });
 
-// http://ahrengot.com/tutorials/greensock-javascript-animation
+    // http://ahrengot.com/tutorials/greensock-javascript-animation
 
-var $cursor = $('.cursor');
+    var $cursor = $('.cursor');
 
-function moveCursor(e) {
-  $cursor.addClass('is-moving');
-  
-	TweenLite.to($cursor, 0.23, {
-    left: e.pageX,
-    top: e.pageY,
-    ease: Power4.easOut
-  });
-  
-  clearTimeout(timer);
+    function moveCursor(e) {
+      $cursor.addClass('is-moving');
 
-   var timer = setTimeout(function() {
-       $cursor.removeClass('is-moving');
-   }, 300);
-}
+      TweenLite.to($cursor, 0.23, {
+        left: e.pageX,
+        top: e.pageY,
+        ease: Power4.easOut
+      });
 
-$(window).on('mousemove', moveCursor);
-//swiper js
+      clearTimeout(timer);
 
-var swiper = new Swiper(".swiper-container", {
-  pagination: ".swiper-pagination",
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflow: {
-    rotate: 100,
-    stretch: 0,
-    depth: 0,
-    modifier: 1,
-    slideShadows: true
-  },
-  loop: true
-});
+      var timer = setTimeout(function () {
+        $cursor.removeClass('is-moving');
+      }, 300);
+    }
 
+    $(window).on('mousemove', moveCursor);
+    //swiper js
 
+    var swiper = new Swiper(".swiper-container", {
+      pagination: ".swiper-pagination",
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflow: {
+        rotate: 100,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+        slideShadows: true
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-
+      loop: true
+    });
   </script>
 </body>
 
