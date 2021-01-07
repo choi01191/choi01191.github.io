@@ -75,10 +75,13 @@
           <label for="ra1" class="lst_btn"></label>
           <div class="data_box align-middle container my-auto">
             <h1 class="row justify-content-center ">Designer</h1>
-            <h2 class="">I am part of Designer</h2>
-            <p id="script1" class="hiddenbox justify-content-center row">orem ipsum dolor sit amet consectetur
-              adipisicing elit. Enim mollitia praesentium incidunt harum? Quidem eveniet optio harum consequatur
-              corporis.</p>
+            <h2 class="">I am a part of Designer</h2>
+            <p id="script1" class="hiddenbox justify-content-center row">
+              A strong eye for innovative design and a keen understanding of techniques geared toward optimum user
+              experience.
+
+
+            </p>
             <i class="fas fa-sign-in-alt justify-content-center row btn1"></i>
           </div>
         </div><!-- desginer -->
@@ -86,9 +89,9 @@
           <label for="ra2" class="lst_btn"></label>
           <div class="data_box container">
             <h1 class="row justify-content-center ">Developer</h1>
-            <h2>I am part of Deveopler</h2>
-            <p id="script2" class="hiddenbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a sunt
-              aliquam cumque architecto ea! Iure non totam quaerat, earum hic velit voluptatum soluta doloremqu.</p>
+            <h2>I am a part of Deveopler</h2>
+            <p id="script2" class="hiddenbox"> Front-end developer with a strong interest in projects that require both
+              conceptual and analytical thinking. I'm always eager to learn from anyone and everyone.</p>
             <!-- <i class="fas fa-hand-point-right  justify-content-center row btn2"></i>
         <i class="far fa-arrow-alt-circle-right"></i> -->
             <i class="fas fa-sign-in-alt justify-content-center row btn2"></i>
@@ -99,9 +102,9 @@
       <i class="fas fa-caret-down"></i>
     </section>
     <!-- about pagge -->
-<section>
+    <section>
 
-</section>
+    </section>
     <section id="skills" class="page row p-0">
       <div class="row">
         <div class="container-fluid col-md-6 vw-100 vh-100 px-0" id="sk-design">
@@ -402,15 +405,18 @@
               <a href="mailto:goeunchoi9090@gmail.com?title=hello" class="btn-secondary btn-lg" tabindex="-1"
                 role="button" aria-disabled="true">Email</a>
             </span>
-            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="https://drive.google.com/file/d/1rdJZPdGwUiAKVj8XDdzmO5GwXgv7b98S/view?usp=sharing"
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a
+                href="https://drive.google.com/file/d/1rdJZPdGwUiAKVj8XDdzmO5GwXgv7b98S/view?usp=sharing"
                 class="btn-secondary btn-lg">Resume</a></span>
-            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="https://www.linkedin.com/in/goeun-choi-059b19143/"
+            <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a
+                href="https://www.linkedin.com/in/goeun-choi-059b19143/"
                 class="btn-secondary btn-lg">Linkedin</a></span>
             <span class="btn btn-secondary btn-lg mb-3 rounded-lg"><a href="https://github.com/choi01191"
                 class="btn-secondary btn-lg">GIthub</a></span>
           </div>
         </div>
-        <p class="trans text-center mt-4 px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam, sapiente
+        <p class="trans text-center mt-4 px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam,
+          sapiente
           quod at atque magnam nisi
           commodi! Atque molestiae molestias adipisci provident. Consequatur explicabo magni nisi ipsum deserunt,
           tempora et.</p>
@@ -434,24 +440,28 @@
 
   <script>
     // //page wheel scrolling smothly
-    $(function(){
+    $(function () {
       var p = $(".page");
-      p.on("mousewheel DOMMouseScroll", function(e){
+      p.on("mousewheel DOMMouseScroll", function (e) {
         var oe = e.originalEvent;
         var sr_top = $(window).scrollTop();
         var ht = parseInt($(this).height());
-        if(oe.wheelDelta < 0){
-          $("body, html").not(":animated").animate({"scrollTop" : "+="+ht+"px"});
+        if (oe.wheelDelta < 0) {
+          $("body, html").not(":animated").animate({
+            "scrollTop": "+=" + ht + "px"
+          });
         } else {
-          $("body, html").not(":animated").animate({"scrollTop": "-="+ht+"px"});
+          $("body, html").not(":animated").animate({
+            "scrollTop": "-=" + ht + "px"
+          });
         }
       });
-      p.mouseover(function(){
-            $(this).find(".trans").addClass("on");
-            $(this).find(".trans2").addClass("on");
-            $(this).find(".btn").addClass("on")
-        });
-      
+      p.mouseover(function () {
+        $(this).find(".trans").addClass("on");
+        $(this).find(".trans2").addClass("on");
+        $(this).find(".btn").addClass("on")
+      });
+
     });
     //controll background color using jquery
     $(function () {
@@ -532,7 +542,6 @@
 
       loop: true
     });
-
   </script>
 </body>
 
